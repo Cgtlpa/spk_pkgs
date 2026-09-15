@@ -1,0 +1,8 @@
+{
+  "name": "grub",
+  "version": "2.02",
+  "architecture": "x86_64",
+  "description": "GRand Unified Bootloader",
+  "filename": "grub.spk",
+  "sha256": "74c8cdc8ff54f04f8960176ac2fc5f177a939326ad44a69aa96435f29939aabf"
+}
