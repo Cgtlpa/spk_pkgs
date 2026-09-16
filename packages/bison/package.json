@@ -1,0 +1,9 @@
+{
+  "name": "bison",
+  "version": "3.8.2",
+  "architecture": "x86_64",
+  "description": "GNU bison parser generator",
+  "filename": "bison.spk",
+  "sha256": "60f9bfd9d8f094e8f8e40d4ae0dad938b44b8ea36b59aff0a804e9daca0eb7ec",
+  "size": "3829760"
+}

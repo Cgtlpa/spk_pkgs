@@ -1,0 +1,9 @@
+{
+  "name": "flex",
+  "version": "2.6.4",
+  "architecture": "x86_64",
+  "description": "flex lexical analyzer generator",
+  "filename": "flex.spk",
+  "sha256": "ca30c25808a649c2a28d88431c196904e6ad12697fbe44405887116f967d1d64",
+  "size": "4096000"
+}

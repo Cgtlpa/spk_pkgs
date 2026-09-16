@@ -1,0 +1,9 @@
+{
+  "name": "texinfo",
+  "version": "7.3",
+  "architecture": "x86_64",
+  "description": "info page reader (info/install-info)",
+  "filename": "texinfo.spk",
+  "sha256": "7213896b0132817be26923d50b4ecf2f2c8bcc8a284ccce383b64016cd4a8018",
+  "size": "23183360"
+}

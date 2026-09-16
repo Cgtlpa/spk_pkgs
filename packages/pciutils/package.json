@@ -1,0 +1,9 @@
+{
+  "name": "pciutils",
+  "version": "3.15.0",
+  "architecture": "x86_64",
+  "description": "PCI utilities (lspci)",
+  "filename": "pciutils.spk",
+  "sha256": "d372e4434ff9c4a3ad97199bb8a2c4ef49131e57eaf98f91ef2ee6e9cba7683e",
+  "size": "14469120"
+}

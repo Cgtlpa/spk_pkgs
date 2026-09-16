@@ -1,0 +1,9 @@
+{
+  "name": "tzdata",
+  "version": "2026c",
+  "architecture": "x86_64",
+  "description": "timezone database",
+  "filename": "tzdata.spk",
+  "sha256": "9cebb548e122e8fdee4ea53f0eee7b9a08d8c4a86436b9edcdfcc708a231e07f",
+  "size": "3061760"
+}

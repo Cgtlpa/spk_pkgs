@@ -1,0 +1,9 @@
+{
+  "name": "dbus",
+  "version": "1.16.2",
+  "architecture": "x86_64",
+  "description": "D-Bus message bus daemon and tools",
+  "filename": "dbus.spk",
+  "sha256": "7a27ef98782bc847f558b6ca39835eab67d973f5cf24cbd0492556ea5e2dd064",
+  "size": "7014400"
+}

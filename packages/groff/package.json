@@ -1,0 +1,9 @@
+{
+  "name": "groff",
+  "version": "1.24.1",
+  "architecture": "x86_64",
+  "description": "groff document formatting (man pages)",
+  "filename": "groff.spk",
+  "sha256": "3dba4bd645ea479b4b1e85090beabe00c8c4ba2d7dc28c8edc92c8b9d41f80a5",
+  "size": "13312000"
+}

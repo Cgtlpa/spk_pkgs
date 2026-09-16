@@ -1,0 +1,9 @@
+{
+  "name": "smartmontools",
+  "version": "7.5",
+  "architecture": "x86_64",
+  "description": "SMART disk monitoring tools",
+  "filename": "smartmontools.spk",
+  "sha256": "279764a72b1e821828234dde353ee82ee9d9c2b5345ed644a40f7e0ffc909cc9",
+  "size": "9717760"
+}

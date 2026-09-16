@@ -1,0 +1,9 @@
+{
+  "name": "ca-certificates",
+  "version": "20240618",
+  "architecture": "x86_64",
+  "description": "CA certificate trust bundle",
+  "filename": "ca-certificates.spk",
+  "sha256": "74a700731c9b10210dda988252bd91c3c5ce8a8d4bd9310cd083696ed50f9548",
+  "size": "1751040"
+}

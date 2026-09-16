@@ -1,0 +1,9 @@
+{
+  "name": "gettext",
+  "version": "1.0",
+  "architecture": "x86_64",
+  "description": "GNU gettext i18n utilities",
+  "filename": "gettext.spk",
+  "sha256": "684000a05313185698e5a30546046de018e76877bda543ff27776367366b38e8",
+  "size": "75980800"
+}
