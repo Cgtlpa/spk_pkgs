@@ -1,0 +1,9 @@
+{
+  "name": "jq",
+  "version": "1.8.2",
+  "architecture": "x86_64",
+  "description": "lightweight JSON processor",
+  "filename": "jq.spk",
+  "sha256": "9b4298ab13c721ec08705a730ccb032149e72adbaef609e6650dc5ef4b8ba24a",
+  "size": "4761600"
+}

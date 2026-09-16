@@ -1,0 +1,9 @@
+{
+  "name": "strace",
+  "version": "7.2",
+  "architecture": "x86_64",
+  "description": "system call tracer",
+  "filename": "strace.spk",
+  "sha256": "cd910aa96ba6cf11163d0219971d71934bb3a3a5c53d96298b54b29f6e016c32",
+  "size": "5048320"
+}

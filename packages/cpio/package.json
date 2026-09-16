@@ -1,0 +1,9 @@
+{
+  "name": "cpio",
+  "version": "2.15",
+  "architecture": "x86_64",
+  "description": "cpio archive tool",
+  "filename": "cpio.spk",
+  "sha256": "134e43c5f970b3dd1f769aa158d633df435f2f28ab3877db60520dda5631f1a1",
+  "size": "2631680"
+}

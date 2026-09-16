@@ -1,0 +1,9 @@
+{
+  "name": "yq",
+  "version": "4.53.3",
+  "architecture": "x86_64",
+  "description": "portable YAML/XML processor (go-yq)",
+  "filename": "yq.spk",
+  "sha256": "a3707b711cb8c0e2ecec7942d94907955165c843d52433f16c85e19e22b8c405",
+  "size": "16271360"
+}

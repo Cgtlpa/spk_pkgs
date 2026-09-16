@@ -1,0 +1,9 @@
+{
+  "name": "diffutils",
+  "version": "3.12",
+  "architecture": "x86_64",
+  "description": "diff/patch utilities (diff3 cmp sdiff)",
+  "filename": "diffutils.spk",
+  "sha256": "aa4d1f306d2a23fa8103ef65a0121d02ec67a5653291e1d250fbc71d5acfb94f",
+  "size": "2775040"
+}

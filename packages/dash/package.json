@@ -1,0 +1,9 @@
+{
+  "name": "dash",
+  "version": "0.5.13.4",
+  "architecture": "x86_64",
+  "description": "POSIX-compliant shell (dash)",
+  "filename": "dash.spk",
+  "sha256": "94e97825bbb18b600781b0f1611aa0d3ff55497bc5d77ac064a08d4ea7f740b1",
+  "size": "3328000"
+}

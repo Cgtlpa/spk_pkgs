@@ -1,0 +1,9 @@
+{
+  "name": "tldr",
+  "version": "1.9.0",
+  "architecture": "x86_64",
+  "description": "TLDR simplified man pages client",
+  "filename": "tldr.spk",
+  "sha256": "c862566716f9a4013c6d5ed15217ac75874ca6bb16ace7ffbff31faf7b6d8178",
+  "size": "5980160"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "sed",
+  "version": "4.10",
+  "architecture": "x86_64",
+  "description": "GNU stream editor",
+  "filename": "sed.spk",
+  "sha256": "b4d9e31050d7d07d89795469cdfe0896ef48899a8be999dbe4900a888eae45ba",
+  "size": "2631680"
+}

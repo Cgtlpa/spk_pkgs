@@ -1,0 +1,9 @@
+{
+  "name": "fzf",
+  "version": "0.74.4",
+  "architecture": "x86_64",
+  "description": "fuzzy finder for the command line",
+  "filename": "fzf.spk",
+  "sha256": "66983d76afaf56a49d7ff4061bca3532452032b6a144d79eabf671bae276e21f",
+  "size": "8130560"
+}

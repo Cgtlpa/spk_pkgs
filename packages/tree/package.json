@@ -1,0 +1,9 @@
+{
+  "name": "tree",
+  "version": "2.3.2",
+  "architecture": "x86_64",
+  "description": "directory tree listing",
+  "filename": "tree.spk",
+  "sha256": "af6d8e3873acdbf3cf145e6e2489bf412f1c2980248d496053dfa2098aae56d1",
+  "size": "2580480"
+}

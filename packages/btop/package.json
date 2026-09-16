@@ -1,0 +1,9 @@
+{
+  "name": "btop",
+  "version": "1.4.7",
+  "architecture": "x86_64",
+  "description": "resource monitor (btop)",
+  "filename": "btop.spk",
+  "sha256": "b1ad2c81bcf212152bc82ec4fb2e77395b453cbc5264b2926ea4ad44ea35da40",
+  "size": "8642560"
+}

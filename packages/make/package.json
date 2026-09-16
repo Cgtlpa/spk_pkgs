@@ -1,0 +1,9 @@
+{
+  "name": "make",
+  "version": "4.4.1",
+  "architecture": "x86_64",
+  "description": "GNU make build tool",
+  "filename": "make.spk",
+  "sha256": "d793ca1a79735a213d7089f7ebf8ac0708323bd5d5f580cbd5ca52dd9cefd11e",
+  "size": "8417280"
+}

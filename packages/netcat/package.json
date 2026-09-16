@@ -1,0 +1,9 @@
+{
+  "name": "netcat",
+  "version": "1.238",
+  "architecture": "x86_64",
+  "description": "OpenBSD netcat (nc)",
+  "filename": "netcat.spk",
+  "sha256": "e6c427bc0d012d29905aa6441abbe3d897bcd8069588bd6f56e4039c713212c1",
+  "size": "2754560"
+}

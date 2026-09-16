@@ -1,0 +1,9 @@
+{
+  "name": "fish",
+  "version": "4.9.3",
+  "architecture": "x86_64",
+  "description": "friendly interactive shell",
+  "filename": "fish.spk",
+  "sha256": "75480e16b596dfa7275be7a6b36ca76419ddf82c2b71f9189a8486a0855db80d",
+  "size": "43694080"
+}

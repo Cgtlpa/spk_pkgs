@@ -1,0 +1,9 @@
+{
+  "name": "autoconf",
+  "version": "2.73",
+  "architecture": "x86_64",
+  "description": "GNU autoconf build tooling",
+  "filename": "autoconf.spk",
+  "sha256": "f71e1b58faab0f1cdf129741efdab2e80cbbfec7d183add930c1b921c023d8c8",
+  "size": "2344960"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pkgconf",
+  "version": "3.0.7",
+  "architecture": "x86_64",
+  "description": "pkg-config compatible tool",
+  "filename": "pkgconf.spk",
+  "sha256": "61d57e1411a5bb231c1ad08728c27e1d3a1cd134329fa34efbb267ce18c6aa98",
+  "size": "2662400"
+}

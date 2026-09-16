@@ -1,0 +1,9 @@
+{
+  "name": "lsof",
+  "version": "4.99.7",
+  "architecture": "x86_64",
+  "description": "list open files (lsof)",
+  "filename": "lsof.spk",
+  "sha256": "73f393d4521a7132b7df895bf2d9abe2354466c127711eaa411b915e3bebb622",
+  "size": "4444160"
+}

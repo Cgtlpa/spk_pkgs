@@ -1,0 +1,9 @@
+{
+  "name": "bind",
+  "version": "9.20.27",
+  "architecture": "x86_64",
+  "description": "BIND DNS utilities (dig/host/nslookup)",
+  "filename": "bind.spk",
+  "sha256": "04826408465d27ccbb86b75eaa0916d74f17609ab033b209ab620c0da38bde4f",
+  "size": "62842880"
+}

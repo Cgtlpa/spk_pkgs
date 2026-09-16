@@ -1,0 +1,9 @@
+{
+  "name": "ncdu",
+  "version": "2.9.2",
+  "architecture": "x86_64",
+  "description": "disk usage analyzer (ncdu)",
+  "filename": "ncdu.spk",
+  "sha256": "e954fb5186da954130a247c5a700aa64e1c449cd817dba08da99c8864e05dabd",
+  "size": "4423680"
+}

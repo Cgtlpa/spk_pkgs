@@ -1,0 +1,9 @@
+{
+  "name": "file",
+  "version": "5.48",
+  "architecture": "x86_64",
+  "description": "file type detector",
+  "filename": "file.spk",
+  "sha256": "ae10381fb33fd9bc4c184a9eeb9539d7daedf1cb392329491862f06e0cedb465",
+  "size": "15032320"
+}

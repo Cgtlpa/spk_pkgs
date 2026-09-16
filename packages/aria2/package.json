@@ -1,0 +1,9 @@
+{
+  "name": "aria2",
+  "version": "1.37.0",
+  "architecture": "x86_64",
+  "description": "aria2 download utility (aria2c)",
+  "filename": "aria2.spk",
+  "sha256": "84ba8b88660161744e5ee668edff0edf79930b5264d816b2794b2f39a7362014",
+  "size": "67461120"
+}

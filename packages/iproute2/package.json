@@ -1,0 +1,9 @@
+{
+  "name": "iproute2",
+  "version": "7.2.0",
+  "architecture": "x86_64",
+  "description": "ip/ss/tc networking utilities",
+  "filename": "iproute2.spk",
+  "sha256": "0f0f4c6c8c19373d82c9e14c648ade82422d3324349db188bf45c6b6eb8258d6",
+  "size": "9902080"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "less",
+  "version": "1:704",
+  "architecture": "x86_64",
+  "description": "terminal pager (less)",
+  "filename": "less.spk",
+  "sha256": "52e27f859a0634648b81571207a7c031f7942442d4746c95dd01c38fbdac5e00",
+  "size": "3962880"
+}

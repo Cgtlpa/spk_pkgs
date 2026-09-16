@@ -1,0 +1,9 @@
+{
+  "name": "duf",
+  "version": "0.9.1",
+  "architecture": "x86_64",
+  "description": "disk usage reporter",
+  "filename": "duf.spk",
+  "sha256": "99637a602913ba9626225b60d3a638b762599ea17e32c23a64ae70ff5bd31e7d",
+  "size": "5642240"
+}

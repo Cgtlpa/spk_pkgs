@@ -1,0 +1,9 @@
+{
+  "name": "tmux",
+  "version": "3.7",
+  "architecture": "x86_64",
+  "description": "terminal multiplexer",
+  "filename": "tmux.spk",
+  "sha256": "268072b5cee053663caa3d72d3a6a843da22e5eacb97d76e8c195cec5d58aecd",
+  "size": "7290880"
+}

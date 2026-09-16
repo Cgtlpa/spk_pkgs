@@ -1,0 +1,9 @@
+{
+  "name": "ncurses-terminfo",
+  "version": "6.6",
+  "architecture": "x86_64",
+  "description": "terminfo terminal capability database",
+  "filename": "ncurses-terminfo.spk",
+  "sha256": "fa893f534a64f939b82cf5a4f339488baa02179185808a55f1298c0da3675816",
+  "size": "4515840"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "findutils",
+  "version": "4.11.0",
+  "architecture": "x86_64",
+  "description": "GNU find/xargs utilities",
+  "filename": "findutils.spk",
+  "sha256": "7e261b45dbb90f4424d91d5738e25c1f6cfecd03ccffef8578398932ade88d6c",
+  "size": "4106240"
+}

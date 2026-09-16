@@ -1,0 +1,9 @@
+{
+  "name": "iputils",
+  "version": "20250605",
+  "architecture": "x86_64",
+  "description": "iputils ping/tracepath utilities",
+  "filename": "iputils.spk",
+  "sha256": "ccb8c7cda022b36a50274df1f856a64e131d9ee0aff7980e3654ff470904cb34",
+  "size": "4894720"
+}

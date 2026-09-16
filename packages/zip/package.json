@@ -1,0 +1,9 @@
+{
+  "name": "zip",
+  "version": "3.0",
+  "architecture": "x86_64",
+  "description": "zip archive creator",
+  "filename": "zip.spk",
+  "sha256": "11bcdfecdef0d834657120e88de530fc15a3b45857148a4d582124deaaeb5d7e",
+  "size": "3287040"
+}

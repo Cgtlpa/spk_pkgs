@@ -1,0 +1,9 @@
+{
+  "name": "zsh",
+  "version": "5.9.2",
+  "architecture": "x86_64",
+  "description": "Z shell (with functions/completions)",
+  "filename": "zsh.spk",
+  "sha256": "75805c3cbc14125ba55000b386b34eb207732ecd46a462f34b683cf523939691",
+  "size": "11294720"
+}

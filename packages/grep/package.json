@@ -1,0 +1,9 @@
+{
+  "name": "grep",
+  "version": "3.12",
+  "architecture": "x86_64",
+  "description": "GNU grep pattern matcher",
+  "filename": "grep.spk",
+  "sha256": "c38203a2ef7a1202c4b84417118af92c19493a7194929cf24a9cef8f1702bfc2",
+  "size": "3379200"
+}

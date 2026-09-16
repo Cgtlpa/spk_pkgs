@@ -1,0 +1,9 @@
+{
+  "name": "bc",
+  "version": "1.08.2",
+  "architecture": "x86_64",
+  "description": "arbitrary-precision calculator",
+  "filename": "bc.spk",
+  "sha256": "b492c6e5c43a4699eed4ccaffd069bfeabb3e5ea0c98ce82d66fcc772d83ef98",
+  "size": "3461120"
+}
