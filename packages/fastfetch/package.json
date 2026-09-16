@@ -1,7 +1,7 @@
 {
-"name": "fastfetch"
-"version": "2.68.1",
-"description": "system info",
-"filename": fastfetch.spk.tgz", 
-"sha256": "a134c25a00992939f2e5ee8608c1bb290db0027cb1ae61d073e07b164b9f9254"
+  "name": "fastfetch",
+  "version": "2.68.1",
+  "description": "system info",
+  "filename": "fastfetch.spk.tgz",
+  "sha256": "a134c25a00992939f2e5ee8608c1bb290db0027cb1ae61d073e07b164b9f9254"
 }

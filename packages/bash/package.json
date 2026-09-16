@@ -1,0 +1,8 @@
+{
+  "name": "bash",
+  "version": "5.3.20",
+  "architecture": "x86_64",
+  "description": "GNU Bourne-Again SHell, statically linked",
+  "filename": "bash.spk",
+  "sha256": "9f97cdf1ee2c4dab762422d7fd77b79c492cc492e9dfefcffa5d39db14714d58"
+}
