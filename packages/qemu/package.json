@@ -1,0 +1,9 @@
+{
+  "name": "qemu",
+  "version": "11.1.1",
+  "architecture": "x86_64",
+  "description": "QEMU machine emulator and virtualizer (x86_64)",
+  "filename": "qemu.spk",
+  "sha256": "60d1aa5143b4582bedcd3a952e7ff7c4def6fcc8f2d5d069acfc1ae9ddccdf05",
+  "size": "321259520"
+}

@@ -1,0 +1,5 @@
+packages/gcc/gcc.spk filter=lfs diff=lfs merge=lfs -text
+packages/emacs/emacs.spk filter=lfs diff=lfs merge=lfs -text
+packages/ghostty/ghostty.spk filter=lfs diff=lfs merge=lfs -text
+packages/qemu/qemu.spk filter=lfs diff=lfs merge=lfs -text
+packages/sddm/sddm.spk filter=lfs diff=lfs merge=lfs -text

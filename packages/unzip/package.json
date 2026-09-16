@@ -1,0 +1,9 @@
+{
+  "name": "unzip",
+  "version": "6.0",
+  "architecture": "x86_64",
+  "description": "unzip archive extraction utility",
+  "filename": "unzip.spk",
+  "sha256": "c1a0d3e0b51c8b92603f8633c0e9a0495f1bdde5cf255bf4cfdf0fc93f77a288",
+  "size": "2938880"
+}

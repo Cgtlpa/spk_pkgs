@@ -1,0 +1,9 @@
+{
+  "name": "nvim",
+  "version": "0.12.5",
+  "architecture": "x86_64",
+  "description": "Neovim - hyperextensible Vim-based text editor",
+  "filename": "nvim.spk",
+  "sha256": "4b430bee2534df5bb41e58765f2352b81a9f29f9bb0e8dcdcbb1eb4ebb2b2487",
+  "size": "35020800"
+}

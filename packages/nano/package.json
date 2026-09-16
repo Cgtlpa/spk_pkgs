@@ -1,0 +1,9 @@
+{
+  "name": "nano",
+  "version": "9.2",
+  "architecture": "x86_64",
+  "description": "GNU nano text editor",
+  "filename": "nano.spk",
+  "sha256": "484e159567c9f55b99684b0b062f636bc298ea6ebf5237f498a0b3d32e79035d",
+  "size": "4864000"
+}

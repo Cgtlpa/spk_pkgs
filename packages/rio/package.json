@@ -1,0 +1,9 @@
+{
+  "name": "rio",
+  "version": "0.5.27",
+  "architecture": "x86_64",
+  "description": "Rio terminal emulator",
+  "filename": "rio.spk",
+  "sha256": "ea44d2a53f5254100da09a7004ae8500f8608611173bf68503b52eb22465c611",
+  "size": "42567680"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "flatpak",
+  "version": "1.18.2",
+  "architecture": "x86_64",
+  "description": "Flatpak application sandboxing and distribution framework",
+  "filename": "flatpak.spk",
+  "sha256": "a714133c414476bc513d9f1c6b620d5797ac7b3f6b204c81ec6f591c5241fb14",
+  "size": "74895360"
+}

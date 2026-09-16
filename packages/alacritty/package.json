@@ -1,0 +1,9 @@
+{
+  "name": "alacritty",
+  "version": "0.17.0",
+  "architecture": "x86_64",
+  "description": "Alacritty - a cross-platform GPU-accelerated terminal emulator",
+  "filename": "alacritty.spk",
+  "sha256": "807357812939d1d230b34eccfbcd98e5a4dd57a00ee80a54e1fc0da4b83eaf29",
+  "size": "14735360"
+}

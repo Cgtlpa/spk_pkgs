@@ -1,0 +1,9 @@
+{
+  "name": "ly",
+  "version": "1.4.1",
+  "architecture": "x86_64",
+  "description": "ly - a TUI display manager (ly-dm)",
+  "filename": "ly.spk",
+  "sha256": "ecb55ba96cd8e867fdfec9e3fbaccb0e8af531b098e1897d5a7fdd3a0f60b6d7",
+  "size": "4935680"
+}

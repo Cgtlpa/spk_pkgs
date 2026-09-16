@@ -1,0 +1,9 @@
+{
+  "name": "kitty",
+  "version": "0.48.2",
+  "architecture": "x86_64",
+  "description": "kitty - the fast, feature-rich GPU-based terminal emulator",
+  "filename": "kitty.spk",
+  "sha256": "36d1a8456392b1875169388b395f0389965f8d1eca92137d713988ada3a1b37f",
+  "size": "54876160"
+}

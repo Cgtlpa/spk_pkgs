@@ -1,0 +1,9 @@
+{
+  "name": "curl",
+  "version": "8.22.0",
+  "architecture": "x86_64",
+  "description": "GNU cURL command line tool for transferring data using URL syntax",
+  "filename": "curl.spk",
+  "sha256": "ed007a5884138af40d3cc789ec805c7a085740f5b522c6e2a09aabc40ff5359f",
+  "size": "19066880"
+}

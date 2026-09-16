@@ -1,0 +1,9 @@
+{
+  "name": "wayland",
+  "version": "1.26.0",
+  "architecture": "x86_64",
+  "description": "Wayland display server protocol and libraries",
+  "filename": "wayland.spk",
+  "sha256": "d41767e75bc73598ea917eebf2f518d7bd693c165229083f4d1f6bd8c37ecf25",
+  "size": "1341440"
+}

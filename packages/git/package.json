@@ -1,0 +1,9 @@
+{
+  "name": "git",
+  "version": "2.55.0",
+  "architecture": "x86_64",
+  "description": "Git distributed version control system",
+  "filename": "git.spk",
+  "sha256": "66bc5d499b3e3214ff9be3de51ea38288230e852757785c75e1b985fbdc33151",
+  "size": "16742400"
+}
