@@ -1,0 +1,9 @@
+{
+  "name": "firefox",
+  "version": "156.0",
+  "architecture": "x86_64",
+  "description": "Mozilla Firefox web browser",
+  "filename": "firefox.spk",
+  "sha256": "f4dba855c4f6a71addf80c21bb91990bdc77ac772fe6e613bf988a353cee9c44",
+  "size": "580874240"
+}

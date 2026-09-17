@@ -1,0 +1,9 @@
+{
+  "name": "clang",
+  "version": "21",
+  "architecture": "x86_64",
+  "description": "Clang C/C++ compiler frontend for LLVM",
+  "filename": "clang.spk",
+  "sha256": "797a8a1073d2d39ded9e41866123758cb0f7235d17d49004b2203d8bcb5c4934",
+  "size": "598251520"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ffmpeg",
+  "version": "6.1.6",
+  "architecture": "x86_64",
+  "description": "FFmpeg multimedia framework (libav*)",
+  "filename": "ffmpeg.spk",
+  "sha256": "6c60906f29b38440a6a2399decf1e70d4dac06d0477f045bc6663a1781325008",
+  "size": "386877440"
+}

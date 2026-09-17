@@ -1,0 +1,9 @@
+{
+  "name": "wine",
+  "version": "11.17",
+  "architecture": "x86_64",
+  "description": "Wine Windows application compatibility layer",
+  "filename": "wine.spk",
+  "sha256": "d5354d7707a17adf067f82e64a6e78abc5a98b349fd23e9666b9cfeb9641865e",
+  "size": "2164469760"
+}

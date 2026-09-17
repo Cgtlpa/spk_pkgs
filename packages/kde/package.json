@@ -1,0 +1,9 @@
+{
+  "name": "kde",
+  "version": "6.7.4",
+  "architecture": "x86_64",
+  "description": "KDE Plasma desktop environment (full)",
+  "filename": "kde.spk",
+  "sha256": "fd05fe75808b14ed24a13509ec568c29b30815141632bb95070aef10c2949536",
+  "size": "2666608640"
+}

@@ -1,0 +1,744 @@
+[
+  {
+    "name": "7zip",
+    "version": "26.03",
+    "architecture": "x86_64",
+    "description": "7-Zip archive utility",
+    "filename": "7zip.spk",
+    "sha256": "e4072bcd4a5890561f09c081eca2fba72c96307e77a17ee24056ef93eab96afa",
+    "size": "276480"
+  },
+  {
+    "name": "alacritty",
+    "version": "0.17.0",
+    "architecture": "x86_64",
+    "description": "Alacritty - a cross-platform GPU-accelerated terminal emulator",
+    "filename": "alacritty.spk",
+    "sha256": "807357812939d1d230b34eccfbcd98e5a4dd57a00ee80a54e1fc0da4b83eaf29",
+    "size": "14735360"
+  },
+  {
+    "name": "aria2",
+    "version": "1.37.0",
+    "architecture": "x86_64",
+    "description": "aria2 download utility (aria2c)",
+    "filename": "aria2.spk",
+    "sha256": "84ba8b88660161744e5ee668edff0edf79930b5264d816b2794b2f39a7362014",
+    "size": "67461120"
+  },
+  {
+    "name": "autoconf",
+    "version": "2.73",
+    "architecture": "x86_64",
+    "description": "GNU autoconf build tooling",
+    "filename": "autoconf.spk",
+    "sha256": "f71e1b58faab0f1cdf129741efdab2e80cbbfec7d183add930c1b921c023d8c8",
+    "size": "2344960"
+  },
+  {
+    "name": "automake",
+    "version": "1.18.1",
+    "architecture": "x86_64",
+    "description": "GNU automake build tooling",
+    "filename": "automake.spk",
+    "sha256": "fdf4faa0592463b1026554f5a6e9557947c7172127c2e0977887aadab0e58671",
+    "size": "2600960"
+  },
+  {
+    "name": "bash",
+    "version": "5.3.20",
+    "architecture": "x86_64",
+    "description": "GNU Bourne-Again SHell, statically linked",
+    "filename": "bash.spk",
+    "sha256": "9f97cdf1ee2c4dab762422d7fd77b79c492cc492e9dfefcffa5d39db14714d58"
+  },
+  {
+    "name": "bc",
+    "version": "1.08.2",
+    "architecture": "x86_64",
+    "description": "arbitrary-precision calculator",
+    "filename": "bc.spk",
+    "sha256": "b492c6e5c43a4699eed4ccaffd069bfeabb3e5ea0c98ce82d66fcc772d83ef98",
+    "size": "3461120"
+  },
+  {
+    "name": "bind",
+    "version": "9.20.27",
+    "architecture": "x86_64",
+    "description": "BIND DNS utilities (dig/host/nslookup)",
+    "filename": "bind.spk",
+    "sha256": "04826408465d27ccbb86b75eaa0916d74f17609ab033b209ab620c0da38bde4f",
+    "size": "62842880"
+  },
+  {
+    "name": "btop",
+    "version": "1.4.7",
+    "architecture": "x86_64",
+    "description": "resource monitor (btop)",
+    "filename": "btop.spk",
+    "sha256": "b1ad2c81bcf212152bc82ec4fb2e77395b453cbc5264b2926ea4ad44ea35da40",
+    "size": "8642560"
+  },
+  {
+    "name": "bzip2",
+    "version": "1.0.8",
+    "architecture": "x86_64",
+    "description": "bzip2 data compressor",
+    "filename": "bzip2.spk",
+    "sha256": "9a8df66f8c50cba80556ccad04d8d1cf07096c200641a12303dbee9474963114",
+    "size": "2631680"
+  },
+  {
+    "name": "clang",
+    "version": "21",
+    "architecture": "x86_64",
+    "description": "Clang C/C++ compiler frontend for LLVM",
+    "filename": "clang.spk",
+    "sha256": "797a8a1073d2d39ded9e41866123758cb0f7235d17d49004b2203d8bcb5c4934",
+    "size": "598251520"
+  },
+  {
+    "name": "coreutils",
+    "version": "9.11",
+    "architecture": "x86_64",
+    "description": "GNU core utilities (file/shell/text tools)",
+    "filename": "coreutils.spk",
+    "sha256": "5581fa29870d11ec06d85312c17225c7527ca9c42f6fc607e1a2e1f788fb885d",
+    "size": "19834880"
+  },
+  {
+    "name": "cpio",
+    "version": "2.15",
+    "architecture": "x86_64",
+    "description": "cpio archive tool",
+    "filename": "cpio.spk",
+    "sha256": "134e43c5f970b3dd1f769aa158d633df435f2f28ab3877db60520dda5631f1a1",
+    "size": "2631680"
+  },
+  {
+    "name": "curl",
+    "version": "8.22.0",
+    "architecture": "x86_64",
+    "description": "GNU cURL command line tool for transferring data using URL syntax",
+    "filename": "curl.spk",
+    "sha256": "ed007a5884138af40d3cc789ec805c7a085740f5b522c6e2a09aabc40ff5359f",
+    "size": "19066880"
+  },
+  {
+    "name": "dash",
+    "version": "0.5.13.4",
+    "architecture": "x86_64",
+    "description": "POSIX-compliant shell (dash)",
+    "filename": "dash.spk",
+    "sha256": "94e97825bbb18b600781b0f1611aa0d3ff55497bc5d77ac064a08d4ea7f740b1",
+    "size": "3328000"
+  },
+  {
+    "name": "diffutils",
+    "version": "3.12",
+    "architecture": "x86_64",
+    "description": "diff/patch utilities (diff3 cmp sdiff)",
+    "filename": "diffutils.spk",
+    "sha256": "aa4d1f306d2a23fa8103ef65a0121d02ec67a5653291e1d250fbc71d5acfb94f",
+    "size": "2775040"
+  },
+  {
+    "name": "duf",
+    "version": "0.9.1",
+    "architecture": "x86_64",
+    "description": "disk usage reporter",
+    "filename": "duf.spk",
+    "sha256": "99637a602913ba9626225b60d3a638b762599ea17e32c23a64ae70ff5bd31e7d",
+    "size": "5642240"
+  },
+  {
+    "name": "emacs",
+    "version": "31.1",
+    "architecture": "x86_64",
+    "description": "GNU Emacs extensible text editor",
+    "filename": "emacs.spk",
+    "sha256": "6aae816b8af9acd70945deb3e63ba52c4208b7a1e87d06f311223606f3360f35",
+    "size": "416010240"
+  },
+  {
+    "name": "fastfetch",
+    "version": "2.68.1",
+    "description": "system info",
+    "filename": "fastfetch.spk.tgz",
+    "sha256": "a134c25a00992939f2e5ee8608c1bb290db0027cb1ae61d073e07b164b9f9254"
+  },
+  {
+    "name": "ffmpeg",
+    "version": "6.1.6",
+    "architecture": "x86_64",
+    "description": "FFmpeg multimedia framework (libav*)",
+    "filename": "ffmpeg.spk",
+    "sha256": "6c60906f29b38440a6a2399decf1e70d4dac06d0477f045bc6663a1781325008",
+    "size": "386877440"
+  },
+  {
+    "name": "file",
+    "version": "5.48",
+    "architecture": "x86_64",
+    "description": "file type detector",
+    "filename": "file.spk",
+    "sha256": "ae10381fb33fd9bc4c184a9eeb9539d7daedf1cb392329491862f06e0cedb465",
+    "size": "15032320"
+  },
+  {
+    "name": "findutils",
+    "version": "4.11.0",
+    "architecture": "x86_64",
+    "description": "GNU find/xargs utilities",
+    "filename": "findutils.spk",
+    "sha256": "7e261b45dbb90f4424d91d5738e25c1f6cfecd03ccffef8578398932ade88d6c",
+    "size": "4106240"
+  },
+  {
+    "name": "firefox",
+    "version": "156.0",
+    "architecture": "x86_64",
+    "description": "Mozilla Firefox web browser",
+    "filename": "firefox.spk",
+    "sha256": "f4dba855c4f6a71addf80c21bb91990bdc77ac772fe6e613bf988a353cee9c44",
+    "size": "580874240"
+  },
+  {
+    "name": "fish",
+    "version": "4.9.3",
+    "architecture": "x86_64",
+    "description": "friendly interactive shell",
+    "filename": "fish.spk",
+    "sha256": "75480e16b596dfa7275be7a6b36ca76419ddf82c2b71f9189a8486a0855db80d",
+    "size": "43694080"
+  },
+  {
+    "name": "flatpak",
+    "version": "1.18.2",
+    "architecture": "x86_64",
+    "description": "Flatpak application sandboxing and distribution framework",
+    "filename": "flatpak.spk",
+    "sha256": "a714133c414476bc513d9f1c6b620d5797ac7b3f6b204c81ec6f591c5241fb14",
+    "size": "74895360"
+  },
+  {
+    "name": "foot",
+    "version": "1.28.0",
+    "architecture": "x86_64",
+    "description": "foot - a fast, lightweight Wayland terminal emulator",
+    "filename": "foot.spk",
+    "sha256": "3fdd53c429094f5f22d4ba1cbb2d2648d9627c37f47a787939907374c6068235",
+    "size": "11960320"
+  },
+  {
+    "name": "fzf",
+    "version": "0.74.4",
+    "architecture": "x86_64",
+    "description": "fuzzy finder for the command line",
+    "filename": "fzf.spk",
+    "sha256": "66983d76afaf56a49d7ff4061bca3532452032b6a144d79eabf671bae276e21f",
+    "size": "8130560"
+  },
+  {
+    "name": "gawk",
+    "version": "5.4.1",
+    "architecture": "x86_64",
+    "description": "GNU awk implementation",
+    "filename": "gawk.spk",
+    "sha256": "7223338d40af57ac91188e28f71153927908e496856d082b433ff14eefd4a879",
+    "size": "7372800"
+  },
+  {
+    "name": "gcc",
+    "version": "16.2.1",
+    "architecture": "x86_64",
+    "description": "GNU Compiler Collection (C/C++) with binutils, headers and runtime",
+    "filename": "gcc.spk",
+    "sha256": "32d95eee0497a1bc06fb3e31f0d9b6795440537246ed17fe32623163eb3228ad",
+    "size": "281835520"
+  },
+  {
+    "name": "ghostty",
+    "version": "1.3.1",
+    "architecture": "x86_64",
+    "description": "ghostty - the fast, native GPU-based terminal emulator",
+    "filename": "ghostty.spk",
+    "sha256": "cf8da21b1b7e06ee5cb5d50089186bd680dff814a0e10c720bbd609921ce3b18",
+    "size": "151828480"
+  },
+  {
+    "name": "git",
+    "version": "2.55.0",
+    "architecture": "x86_64",
+    "description": "Git distributed version control system",
+    "filename": "git.spk",
+    "sha256": "6a315b4bc722ac9d44db154d7e6fff499610ab379834a01855809c9a3615f050",
+    "size": "196515840"
+  },
+  {
+    "name": "gnome",
+    "version": "48.0",
+    "architecture": "x86_64",
+    "description": "GNOME desktop environment (full)",
+    "filename": "gnome.spk",
+    "sha256": "6eb60a2fb5d53ccd15f62b1cb3ec2543e7451e1a577ecc02e0142324da5bbff2",
+    "size": "1985986560"
+  },
+  {
+    "name": "grep",
+    "version": "3.12",
+    "architecture": "x86_64",
+    "description": "GNU grep pattern matcher",
+    "filename": "grep.spk",
+    "sha256": "c38203a2ef7a1202c4b84417118af92c19493a7194929cf24a9cef8f1702bfc2",
+    "size": "3379200"
+  },
+  {
+    "name": "grub",
+    "version": "2.02",
+    "architecture": "x86_64",
+    "description": "GRand Unified Bootloader",
+    "filename": "grub.spk",
+    "sha256": "74c8cdc8ff54f04f8960176ac2fc5f177a939326ad44a69aa96435f29939aabf"
+  },
+  {
+    "name": "gzip",
+    "version": "1.14",
+    "architecture": "x86_64",
+    "description": "GNU compression utilities (gzip)",
+    "filename": "gzip.spk",
+    "sha256": "766d7c9b11cf09529c4d0a45ddaf9c35cf6e5fc9483996b7c6fcca2cd53c0965",
+    "size": "2631680"
+  },
+  {
+    "name": "hyprland",
+    "version": "0.56.2",
+    "architecture": "x86_64",
+    "description": "Hyprland dynamic tiling Wayland compositor",
+    "filename": "hyprland.spk",
+    "sha256": "d0cf85ffb2e3483a849f3f262c852a52990c07c4750cf90fd0ed901de6ef8a96",
+    "size": "286566400"
+  },
+  {
+    "name": "iproute2",
+    "version": "7.2.0",
+    "architecture": "x86_64",
+    "description": "ip/ss/tc networking utilities",
+    "filename": "iproute2.spk",
+    "sha256": "0f0f4c6c8c19373d82c9e14c648ade82422d3324349db188bf45c6b6eb8258d6",
+    "size": "9902080"
+  },
+  {
+    "name": "iputils",
+    "version": "20250605",
+    "architecture": "x86_64",
+    "description": "iputils ping/tracepath utilities",
+    "filename": "iputils.spk",
+    "sha256": "ccb8c7cda022b36a50274df1f856a64e131d9ee0aff7980e3654ff470904cb34",
+    "size": "4894720"
+  },
+  {
+    "name": "jdk",
+    "version": "21.0.8+9",
+    "architecture": "x86_64",
+    "description": "OpenJDK 21 Java Development Kit (LTS)",
+    "filename": "jdk.spk",
+    "sha256": "0a4fbc39687e8a77e61f4654338307f8bb4e115a617eccee88b2680427a7a23d",
+    "size": "281016320"
+  },
+  {
+    "name": "jq",
+    "version": "1.8.2",
+    "architecture": "x86_64",
+    "description": "lightweight JSON processor",
+    "filename": "jq.spk",
+    "sha256": "9b4298ab13c721ec08705a730ccb032149e72adbaef609e6650dc5ef4b8ba24a",
+    "size": "4761600"
+  },
+  {
+    "name": "kde",
+    "version": "6.7.4",
+    "architecture": "x86_64",
+    "description": "KDE Plasma desktop environment (full)",
+    "filename": "kde.spk",
+    "sha256": "fd05fe75808b14ed24a13509ec568c29b30815141632bb95070aef10c2949536",
+    "size": "2666608640"
+  },
+  {
+    "name": "kitty",
+    "version": "0.48.2",
+    "architecture": "x86_64",
+    "description": "kitty - the fast, feature-rich GPU-based terminal emulator",
+    "filename": "kitty.spk",
+    "sha256": "36d1a8456392b1875169388b395f0389965f8d1eca92137d713988ada3a1b37f",
+    "size": "54876160"
+  },
+  {
+    "name": "kvm",
+    "version": "7.2.0",
+    "architecture": "x86_64",
+    "description": "Kernel-based Virtual Machine frontend (invokes qemu-system-x86_64)",
+    "filename": "kvm.spk",
+    "sha256": "16752de6e736c29dada0aa33a626d221a8bf045c46bf9231288cc26508b0b244",
+    "size": "74178560"
+  },
+  {
+    "name": "less",
+    "version": "1:704",
+    "architecture": "x86_64",
+    "description": "terminal pager (less)",
+    "filename": "less.spk",
+    "sha256": "52e27f859a0634648b81571207a7c031f7942442d4746c95dd01c38fbdac5e00",
+    "size": "3962880"
+  },
+  {
+    "name": "linux",
+    "version": "7.2.0",
+    "architecture": "x86_64",
+    "description": "Linux kernel 7.2 with all modules",
+    "filename": "linux.spk",
+    "sha256": "bfb339fbd3c1a7c96071c0a88c46c9b94b9be374ddde6c2dafba06a238a26c99"
+  },
+  {
+    "name": "llvm",
+    "version": "21",
+    "architecture": "x86_64",
+    "description": "LLVM compiler infrastructure",
+    "filename": "llvm.spk",
+    "sha256": "499825e203e6b4681ba9a1766d71582daf6301126293ca39ba6fc7f9c307487e",
+    "size": "855214080"
+  },
+  {
+    "name": "lsof",
+    "version": "4.99.7",
+    "architecture": "x86_64",
+    "description": "list open files (lsof)",
+    "filename": "lsof.spk",
+    "sha256": "73f393d4521a7132b7df895bf2d9abe2354466c127711eaa411b915e3bebb622",
+    "size": "4444160"
+  },
+  {
+    "name": "ly",
+    "version": "1.4.1",
+    "architecture": "x86_64",
+    "description": "ly - a TUI display manager (ly-dm)",
+    "filename": "ly.spk",
+    "sha256": "ecb55ba96cd8e867fdfec9e3fbaccb0e8af531b098e1897d5a7fdd3a0f60b6d7",
+    "size": "4935680"
+  },
+  {
+    "name": "make",
+    "version": "4.4.1",
+    "architecture": "x86_64",
+    "description": "GNU make build tool",
+    "filename": "make.spk",
+    "sha256": "d793ca1a79735a213d7089f7ebf8ac0708323bd5d5f580cbd5ca52dd9cefd11e",
+    "size": "8417280"
+  },
+  {
+    "name": "mtr",
+    "version": "0.96",
+    "architecture": "x86_64",
+    "description": "network diagnostic tool (mtr)",
+    "filename": "mtr.spk",
+    "sha256": "6ebca7e320e2cf55758e62dbc1947c224f2907afc0f8aa5b2bbd6a75eb1a261c",
+    "size": "4485120"
+  },
+  {
+    "name": "nano",
+    "version": "9.2",
+    "architecture": "x86_64",
+    "description": "GNU nano text editor",
+    "filename": "nano.spk",
+    "sha256": "484e159567c9f55b99684b0b062f636bc298ea6ebf5237f498a0b3d32e79035d",
+    "size": "4864000"
+  },
+  {
+    "name": "ncdu",
+    "version": "2.9.2",
+    "architecture": "x86_64",
+    "description": "disk usage analyzer (ncdu)",
+    "filename": "ncdu.spk",
+    "sha256": "e954fb5186da954130a247c5a700aa64e1c449cd817dba08da99c8864e05dabd",
+    "size": "4423680"
+  },
+  {
+    "name": "ncurses-terminfo",
+    "version": "6.6",
+    "architecture": "x86_64",
+    "description": "terminfo terminal capability database",
+    "filename": "ncurses-terminfo.spk",
+    "sha256": "fa893f534a64f939b82cf5a4f339488baa02179185808a55f1298c0da3675816",
+    "size": "4515840"
+  },
+  {
+    "name": "netcat",
+    "version": "1.238",
+    "architecture": "x86_64",
+    "description": "OpenBSD netcat (nc)",
+    "filename": "netcat.spk",
+    "sha256": "e6c427bc0d012d29905aa6441abbe3d897bcd8069588bd6f56e4039c713212c1",
+    "size": "2754560"
+  },
+  {
+    "name": "ninja",
+    "version": "1.13.2",
+    "architecture": "x86_64",
+    "description": "ninja build system",
+    "filename": "ninja.spk",
+    "sha256": "0840282a7b6be148b3187c7481048111667a3426b705d36243cf54538453808f",
+    "size": "7239680"
+  },
+  {
+    "name": "nmap",
+    "version": "7.991",
+    "architecture": "x86_64",
+    "description": "network exploration and security tool",
+    "filename": "nmap.spk",
+    "sha256": "dd58219b1e5a6e2d110774e414a7ceec06039e63b569b6c2d315adda1af8b3a1",
+    "size": "46407680"
+  },
+  {
+    "name": "nvim",
+    "version": "0.12.5",
+    "architecture": "x86_64",
+    "description": "Neovim - hyperextensible Vim-based text editor",
+    "filename": "nvim.spk",
+    "sha256": "4b430bee2534df5bb41e58765f2352b81a9f29f9bb0e8dcdcbb1eb4ebb2b2487",
+    "size": "35020800"
+  },
+  {
+    "name": "openssh",
+    "version": "10.5p1",
+    "architecture": "x86_64",
+    "description": "OpenSSH secure shell client/server",
+    "filename": "openssh.spk",
+    "sha256": "a41160daf6759fbaddcec1955bdd1a455d5e0b46e2280becb2014998332f37d5",
+    "size": "19875840"
+  },
+  {
+    "name": "patch",
+    "version": "2.8",
+    "architecture": "x86_64",
+    "description": "apply diffs to files (patch)",
+    "filename": "patch.spk",
+    "sha256": "cb4fa3e1270245a364176efa7da1ed6e76dd523156ba4c972dbde9a4a687ab47",
+    "size": "2682880"
+  },
+  {
+    "name": "pkgconf",
+    "version": "3.0.7",
+    "architecture": "x86_64",
+    "description": "pkg-config compatible tool",
+    "filename": "pkgconf.spk",
+    "sha256": "61d57e1411a5bb231c1ad08728c27e1d3a1cd134329fa34efbb267ce18c6aa98",
+    "size": "2662400"
+  },
+  {
+    "name": "qemu",
+    "version": "11.1.1",
+    "architecture": "x86_64",
+    "description": "QEMU machine emulator and virtualizer (x86_64)",
+    "filename": "qemu.spk",
+    "sha256": "60d1aa5143b4582bedcd3a952e7ff7c4def6fcc8f2d5d069acfc1ae9ddccdf05",
+    "size": "321259520"
+  },
+  {
+    "name": "rio",
+    "version": "0.5.27",
+    "architecture": "x86_64",
+    "description": "Rio terminal emulator",
+    "filename": "rio.spk",
+    "sha256": "ea44d2a53f5254100da09a7004ae8500f8608611173bf68503b52eb22465c611",
+    "size": "42567680"
+  },
+  {
+    "name": "rsync",
+    "version": "3.5.0",
+    "architecture": "x86_64",
+    "description": "fast incremental file transfer tool",
+    "filename": "rsync.spk",
+    "sha256": "f4ad79f93e163608a258ea2612febe769d27725a5c8fa7a9f26d3e1d9068d534",
+    "size": "12595200"
+  },
+  {
+    "name": "sddm",
+    "version": "0.21.0",
+    "architecture": "x86_64",
+    "description": "SDDM - Simple Desktop Display Manager (greeter + helper)",
+    "filename": "sddm.spk",
+    "sha256": "7ccd80686508f3965e314cfa5eca22093bb346534959498b9d827f35773e7c06",
+    "size": "142120960"
+  },
+  {
+    "name": "sed",
+    "version": "4.10",
+    "architecture": "x86_64",
+    "description": "GNU stream editor",
+    "filename": "sed.spk",
+    "sha256": "b4d9e31050d7d07d89795469cdfe0896ef48899a8be999dbe4900a888eae45ba",
+    "size": "2631680"
+  },
+  {
+    "name": "sqlite",
+    "version": "3.53.4",
+    "architecture": "x86_64",
+    "description": "SQLite database shell (sqlite3)",
+    "filename": "sqlite.spk",
+    "sha256": "317fdcca50a12b8f4f7e8d7048a96617ab2dd5bc4a4d5d16381384413aa53fbe",
+    "size": "6778880"
+  },
+  {
+    "name": "strace",
+    "version": "7.2",
+    "architecture": "x86_64",
+    "description": "system call tracer",
+    "filename": "strace.spk",
+    "sha256": "cd910aa96ba6cf11163d0219971d71934bb3a3a5c53d96298b54b29f6e016c32",
+    "size": "5048320"
+  },
+  {
+    "name": "tar",
+    "version": "1.35",
+    "architecture": "x86_64",
+    "description": "GNU tar archiving utility",
+    "filename": "tar.spk",
+    "sha256": "7af6f3f46eaa42841bef58dd5b6d10c8959f249db2094bff341108d9931e3e05",
+    "size": "2969600"
+  },
+  {
+    "name": "tldr",
+    "version": "1.9.0",
+    "architecture": "x86_64",
+    "description": "TLDR simplified man pages client",
+    "filename": "tldr.spk",
+    "sha256": "c862566716f9a4013c6d5ed15217ac75874ca6bb16ace7ffbff31faf7b6d8178",
+    "size": "5980160"
+  },
+  {
+    "name": "tmux",
+    "version": "3.7",
+    "architecture": "x86_64",
+    "description": "terminal multiplexer",
+    "filename": "tmux.spk",
+    "sha256": "268072b5cee053663caa3d72d3a6a843da22e5eacb97d76e8c195cec5d58aecd",
+    "size": "7290880"
+  },
+  {
+    "name": "tree",
+    "version": "2.3.2",
+    "architecture": "x86_64",
+    "description": "directory tree listing",
+    "filename": "tree.spk",
+    "sha256": "af6d8e3873acdbf3cf145e6e2489bf412f1c2980248d496053dfa2098aae56d1",
+    "size": "2580480"
+  },
+  {
+    "name": "unzip",
+    "version": "6.0",
+    "architecture": "x86_64",
+    "description": "unzip archive extraction utility",
+    "filename": "unzip.spk",
+    "sha256": "c1a0d3e0b51c8b92603f8633c0e9a0495f1bdde5cf255bf4cfdf0fc93f77a288",
+    "size": "2938880"
+  },
+  {
+    "name": "vim",
+    "version": "9.2.1046",
+    "architecture": "x86_64",
+    "description": "Vi IMproved text editor",
+    "filename": "vim.spk",
+    "sha256": "1adeadec33d63df7a0207f6e8f5bede4d135b4179ebc8c8c9dce505877dc1124",
+    "size": "52060160"
+  },
+  {
+    "name": "wayland",
+    "version": "1.26.0",
+    "architecture": "x86_64",
+    "description": "Wayland display server protocol and libraries",
+    "filename": "wayland.spk",
+    "sha256": "d41767e75bc73598ea917eebf2f518d7bd693c165229083f4d1f6bd8c37ecf25",
+    "size": "1341440"
+  },
+  {
+    "name": "wget",
+    "version": "1.25.0",
+    "architecture": "x86_64",
+    "description": "GNU wget downloader",
+    "filename": "wget.spk",
+    "sha256": "96fa4ca1cae4d034692f4378d4ee11719d5f9b72201f6561997d1c73d60cbd76",
+    "size": "14172160"
+  },
+  {
+    "name": "wine",
+    "version": "11.17",
+    "architecture": "x86_64",
+    "description": "Wine Windows application compatibility layer",
+    "filename": "wine.spk",
+    "sha256": "d5354d7707a17adf067f82e64a6e78abc5a98b349fd23e9666b9cfeb9641865e",
+    "size": "2164469760"
+  },
+  {
+    "name": "xfce4",
+    "version": "4.20",
+    "architecture": "x86_64",
+    "description": "Xfce desktop environment (full)",
+    "filename": "xfce4.spk",
+    "sha256": "2927cf00d7b066025b9a3ef7647f8225ac1860e305a4d3851f9ee468118ef68e",
+    "size": "799784960"
+  },
+  {
+    "name": "xorriso",
+    "version": "1.5.8.2",
+    "architecture": "x86_64",
+    "description": "xorriso ISO image management tool (libisoburn)",
+    "filename": "xorriso.spk",
+    "sha256": "4e99d57d8d529c44716bd14c719de181b562240b4f85575532d2fe27de9272dd",
+    "size": "5468160"
+  },
+  {
+    "name": "xz",
+    "version": "5.8.4",
+    "architecture": "x86_64",
+    "description": "xz/lzma compression utilities",
+    "filename": "xz.spk",
+    "sha256": "16818e5d819c6e64071317c72931d98422a0fb11502602b89a98f789a3d3f939",
+    "size": "2846720"
+  },
+  {
+    "name": "yq",
+    "version": "4.53.3",
+    "architecture": "x86_64",
+    "description": "portable YAML/XML processor (go-yq)",
+    "filename": "yq.spk",
+    "sha256": "a3707b711cb8c0e2ecec7942d94907955165c843d52433f16c85e19e22b8c405",
+    "size": "16271360"
+  },
+  {
+    "name": "zip",
+    "version": "3.0",
+    "architecture": "x86_64",
+    "description": "zip archive creator",
+    "filename": "zip.spk",
+    "sha256": "11bcdfecdef0d834657120e88de530fc15a3b45857148a4d582124deaaeb5d7e",
+    "size": "3287040"
+  },
+  {
+    "name": "zsh",
+    "version": "5.9.2",
+    "architecture": "x86_64",
+    "description": "Z shell (with functions/completions)",
+    "filename": "zsh.spk",
+    "sha256": "75805c3cbc14125ba55000b386b34eb207732ecd46a462f34b683cf523939691",
+    "size": "11294720"
+  },
+  {
+    "name": "zstd",
+    "version": "1.5.7",
+    "architecture": "x86_64",
+    "description": "Zstandard compression (zstd)",
+    "filename": "zstd.spk",
+    "sha256": "ae2188c231c3c94a4ec466c86f743c106d05a019de977026ba2f12b105ba2246",
+    "size": "4116480"
+  }
+]

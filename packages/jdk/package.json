@@ -1,0 +1,9 @@
+{
+  "name": "jdk",
+  "version": "21.0.8+9",
+  "architecture": "x86_64",
+  "description": "OpenJDK 21 Java Development Kit (LTS)",
+  "filename": "jdk.spk",
+  "sha256": "0a4fbc39687e8a77e61f4654338307f8bb4e115a617eccee88b2680427a7a23d",
+  "size": "281016320"
+}
