@@ -23,7 +23,7 @@
     "architecture": "x86_64",
     "description": "AMD GPU driver stack (Mesa radeonsi/R600, RADV, amdgpu) with prebuilt 7.2.0 kernel modules and grub setup",
     "filename": "amd.spk",
-    "sha256": "8cd10315ff4ea2e4f24a06c7b0657223affad09bd91a7757c9d6b8be19593bb8",
+    "sha256": "3e8296a910f01d12b8573bbf96c20d20987a719628e9f4461a442bb84e57b8f0",
     "size": "460544000",
     "parts": "5"
   },
@@ -533,7 +533,7 @@
     "architecture": "x86_64",
     "description": "NVIDIA driver 595 series with prebuilt 7.2.0 kernel modules and grub nouveau-blacklist setup",
     "filename": "nvidia.spk",
-    "sha256": "a1c7a55c7ad9b2cd6956a1d22717eb31a92145a83f156daf7238e457f9c543e8",
+    "sha256": "d476b61a8290969b50c23d0d176d0b18c1585976a4d2508f7b65bfe5640e66b3",
     "size": "807772160",
     "parts": "9"
   },
@@ -543,7 +543,7 @@
     "architecture": "x86_64",
     "description": "NVIDIA driver 580 legacy (Maxwell/Pascal/Volta) with prebuilt 7.2.0 kernel modules and grub nouveau-blacklist setup",
     "filename": "nvidia-legacy.spk",
-    "sha256": "47159168b39e8dbed3daea646837d4caf74abfb718c6197c05cdaa3302d31156",
+    "sha256": "6cd70588fa6eac95b411296d7ef9b8a4e63aeb10bd1fc69e2ea5f17e1af573f1",
     "size": "1163837440",
     "parts": "13"
   },
