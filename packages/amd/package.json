@@ -1,0 +1,10 @@
+{
+  "name": "amd",
+  "version": "26.2.2",
+  "architecture": "x86_64",
+  "description": "AMD GPU driver stack (Mesa radeonsi/R600, RADV, amdgpu) with prebuilt 7.2.0 kernel modules and grub setup",
+  "filename": "amd.spk",
+  "sha256": "8cd10315ff4ea2e4f24a06c7b0657223affad09bd91a7757c9d6b8be19593bb8",
+  "size": "460544000",
+  "parts": "5"
+}
