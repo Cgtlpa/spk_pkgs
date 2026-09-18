@@ -15,9 +15,10 @@
 #   1) Ensures the amdgpu modules-load entry and Xorg/Vulkan config files
 #      shipped by the package are present
 #   2) Runs depmod for the shipped 7.2.0 modules (and the running kernel)
-#   3) Regenerates boot/grub/grub.cfg via grub-mkconfig (live system only,
-#      best effort - a broken grub setup only warns)
-#   4) Rebuilds the initramfs so amdgpu KMS + firmware load early
+#   3) Bootloader: AMD needs no cmdline changes - the config is never
+#      touched (a blind regen once left systems in grub rescue)
+#   4) Rebuilds the initramfs so amdgpu KMS + firmware load early, but only
+#      when a rebuild tool exists
 #      (live system only; for --root targets it prints what to run instead)
 #
 # Notes:
@@ -98,15 +99,8 @@ if [ -n "${SPK_PKGDIR:-}" ] && [ -d "$SPK_PKGDIR/usr" ]; then
     fi
 fi
 
-# The payload carries prebuilt modules for $PKG_KVER only - a different
-# booted kernel will not load them, no matter what the rest of this script
-# configures.
-if [ -z "$PREFIX" ]; then
-    _kver="$(uname -r 2>/dev/null || true)"
-    if [ -n "$_kver" ] && [ "$_kver" != "$PKG_KVER" ]; then
-        warn "running kernel $_kver != prebuilt modules $PKG_KVER; boot the $PKG_KVER kernel (spk linux package) or the driver will not load."
-    fi
-fi
+# amdgpu/radeon are in-tree kernel modules, so they always match the booted
+# kernel - no version check needed (unlike the out-of-tree nvidia blobs).
 
 # 1) Sanity-check the files this package ships.
 missing=0
@@ -158,28 +152,27 @@ if [ -n "$PREFIX" ]; then
     exit 0
 fi
 
-# 3) Regenerate GRUB config. Best effort only: a present-but-broken
-# grub-mkconfig used to kill the whole install with its own exit code.
-if command -v grub-mkconfig >/dev/null 2>&1; then
-    mkdir -p "$(dirname "$GRUB_CFG")"
-    if grub-mkconfig -o "$GRUB_CFG"; then
-        log "regenerated $GRUB_CFG via grub-mkconfig"
-    else
-        rc=$?
-        warn "grub-mkconfig failed (exit $rc); GRUB menu NOT regenerated - fix grub, then rerun: grub-mkconfig -o $GRUB_CFG"
-    fi
-elif command -v update-grub >/dev/null 2>&1; then
-    if update-grub; then
-        log "regenerated GRUB via update-grub"
-    else
-        rc=$?
-        warn "update-grub failed (exit $rc); GRUB menu NOT regenerated - rerun update-grub by hand."
-    fi
+# 3) Bootloader: AMD needs no kernel cmdline changes, so never touch the
+# bootloader config here - a blind grub-mkconfig regen once left systems in
+# grub rescue. Just report what was found.
+if [ -f "$GRUB_CFG" ]; then
+    log "AMD needs no bootloader changes; leaving $GRUB_CFG alone."
 else
-    warn "neither grub-mkconfig nor update-grub found; reinstall grub package and rerun."
+    log "no $GRUB_CFG; nothing to do for the bootloader."
 fi
 
-# 4) Rebuild initramfs so amdgpu KMS + firmware load early.
+# 4) Rebuild initramfs so amdgpu KMS + firmware load early - but only when
+# something can actually rebuild it. Silen boots a prebuilt initramfs with
+# no rebuild tool on target; there the in-tree driver + firmware already
+# present are enough to get a picture.
+_uses_initrd=""
+if grep -q -E '^[[:space:]]*initrd[[:space:]]' "$GRUB_CFG" 2>/dev/null; then
+    _uses_initrd="1"
+else
+    for _ird in "$PREFIX"/boot/initramfs.* "$PREFIX"/boot/initrd* "$PREFIX"/initramfs.* ; do
+        [ -f "$_ird" ] && { _uses_initrd="1"; break; }
+    done
+fi
 rebuilt=""
 if command -v mkinitcpio >/dev/null 2>&1; then
     mkinitcpio -P && rebuilt="mkinitcpio -P"
@@ -192,8 +185,10 @@ elif command -v booster >/dev/null 2>&1; then
 fi
 if [ -n "$rebuilt" ]; then
     log "rebuilt initramfs via $rebuilt"
+elif [ -n "$_uses_initrd" ]; then
+    warn "no initramfs tool found but boot uses an initrd; rebuild the initramfs when you can."
 else
-    warn "no initramfs tool (mkinitcpio/dracut/update-initramfs) found; if you use an initramfs, rebuild it manually so amdgpu + firmware load early."
+    log "no initramfs in boot config; nothing to rebuild."
 fi
 
 log "done. Verify: lspci -k should show amdgpu in use; glxinfo -B and vulkaninfo should list your AMD GPU. Then reboot."
