@@ -4,7 +4,7 @@
   "architecture": "x86_64",
   "description": "AMD GPU driver stack (Mesa radeonsi/R600, RADV, amdgpu) with prebuilt 7.2.0 kernel modules and grub setup",
   "filename": "amd.spk",
-  "sha256": "6496d69fed3d3cf844bfac4f0df7b06b3d3e6302bd4c1a960f8243d3ada08769",
+  "sha256": "7bd3375575016ca39809d4ecbbdca3c61bb72c3c783a75044a19c6560820cc36",
   "size": "460544000",
   "parts": "5"
 }

@@ -76,17 +76,41 @@ if [ -n "${SPK_PKGDIR:-}" ] && [ -d "$SPK_PKGDIR/usr" ]; then
         LISTFILE="$SPK_APPDIR/system-files"
         : > "$LISTFILE" 2>/dev/null || LISTFILE=""
     fi
-    mkdir -p "$PREFIX/usr" 2>/dev/null || die "cannot create $PREFIX/usr (run as root?)"
-    if cp -a "$SPK_PKGDIR/usr/." "$PREFIX/usr/" 2>/dev/null; then
-        log "installed $SPK_PKGDIR/usr -> $PREFIX/usr"
-    else
-        die "cannot copy $SPK_PKGDIR/usr to $PREFIX/usr (run as root?)"
-    fi
-    if [ -n "$LISTFILE" ]; then
-        ( cd "$SPK_PKGDIR/usr" 2>/dev/null && find . -mindepth 1 \( -type f -o -type l \) | sed 's,^\./,,' | while IFS= read -r _rel; do
-            printf '%s\n' "$PREFIX/usr/$_rel"
-        done >> "$LISTFILE" ) 2>/dev/null || true
-    fi
+    for _sub in usr etc; do
+        [ -d "$SPK_PKGDIR/$_sub" ] || continue
+        # never overlay the C library, loader, compiler runtimes or
+        # interactive line-editing libs: the system already has them, and
+        # shadowing them with bundled copies breaks unrelated binaries
+        # (segfaults / GLIBC_* version errors system-wide).
+        _flist="$(mktemp 2>/dev/null || printf '%s/spk-overlay.%s.tmp' "${TMPDIR:-/tmp}" "$$")"
+        [ -n "$_flist" ] || die "cannot create temp file (mktemp missing and TMPDIR unwritable)"
+        if ( cd "$SPK_PKGDIR/$_sub" 2>/dev/null && find . -mindepth 1 \( -type f -o -type l \) | sort > "$_flist" ) 2>/dev/null; then
+            _copied=0
+            _lastdir=""
+            while IFS= read -r _rel; do
+                _rel="${_rel#./}"
+                _bn="${_rel##*/}"
+                case "$_bn" in
+                    ld-linux*|libc.so*|libc-[0-9]*|libm.so*|libpthread*|libdl.so*|librt.so*|libresolv*|libutil.so*|libnsl*|libnss_*|libcrypt.so*|libthread_db*|libgcc_s*|libstdc++*|libgomp*|libmemusage*|libpcprofile*|libBrokenLocale*|libtinfo*|libncurses*|libreadline*|libhistory*) continue ;;
+                esac
+                _dir="${_rel%/*}"
+                [ "$_dir" = "$_rel" ] && _dir="."
+                if [ "$_dir" != "$_lastdir" ]; then
+                    mkdir -p "$PREFIX/$_sub/$_dir" 2>/dev/null || die "cannot create $PREFIX/$_sub/$_dir (run as root?)"
+                    _lastdir="$_dir"
+                fi
+                cp -a "$SPK_PKGDIR/$_sub/$_rel" "$PREFIX/$_sub/$_rel" 2>/dev/null || die "cannot copy $_rel to $PREFIX/$_sub (run as root?)"
+                _copied=$((_copied + 1))
+                if [ -n "$LISTFILE" ]; then
+                    printf '%s\n' "$PREFIX/$_sub/$_rel" >> "$LISTFILE" 2>/dev/null || true
+                fi
+            done < "$_flist"
+            log "installed $_copied file(s) $SPK_PKGDIR/$_sub -> $PREFIX/$_sub"
+        else
+            warn "cannot list $SPK_PKGDIR/$_sub; skipping overlay of it (reinstall the package?)"
+        fi
+        rm -f "$_flist" 2>/dev/null || true
+    done
     # one cache refresh for the overlaid libs
     if command -v ldconfig >/dev/null 2>&1; then
         if [ -n "$PREFIX" ]; then
