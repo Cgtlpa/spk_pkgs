@@ -311,6 +311,14 @@
     "size": "2631680"
   },
   {
+    "name": "htop",
+    "version": "3.5.3",
+    "description": "interactive process viewer",
+    "filename": "htop.spk",
+    "sha256": "99336147312d3f90cffb4e73f8f008255421fc3dd2df8d4ada5240569f8603e5",
+    "size": "4669440"
+  },
+  {
     "name": "hyprland",
     "version": "0.56.2",
     "architecture": "x86_64",
@@ -397,7 +405,9 @@
     "architecture": "x86_64",
     "description": "Linux kernel 7.2 with all modules",
     "filename": "linux.spk",
-    "sha256": "bfb339fbd3c1a7c96071c0a88c46c9b94b9be374ddde6c2dafba06a238a26c99"
+    "sha256": "ae2d878f857dc4e41d446d3bafc985cf3b5f6ac18a21fac2ff55a9c4c25d1bde",
+    "size": "2406639880",
+    "parts": "25"
   },
   {
     "name": "llvm",
@@ -668,6 +678,14 @@
     "filename": "wget.spk",
     "sha256": "96fa4ca1cae4d034692f4378d4ee11719d5f9b72201f6561997d1c73d60cbd76",
     "size": "14172160"
+  },
+  {
+    "name": "which",
+    "version": "2.25",
+    "description": "locate a command in PATH",
+    "filename": "which.spk",
+    "sha256": "406bd38f40d2c6cfa740c2b66502b60ed544f5ad7dfd98505652e75ac76333bc",
+    "size": "2519040"
   },
   {
     "name": "wine",

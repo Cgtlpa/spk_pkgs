@@ -4,5 +4,7 @@
   "architecture": "x86_64",
   "description": "Linux kernel 7.2 with all modules",
   "filename": "linux.spk",
-  "sha256": "bfb339fbd3c1a7c96071c0a88c46c9b94b9be374ddde6c2dafba06a238a26c99"
+  "sha256": "ae2d878f857dc4e41d446d3bafc985cf3b5f6ac18a21fac2ff55a9c4c25d1bde",
+  "size": "2406639880",
+  "parts": "25"
 }

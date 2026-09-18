@@ -1,0 +1,9 @@
+{
+  "name": "htop",
+  "version": "3.5.3",
+  "architecture": "x86_64",
+  "description": "interactive process viewer",
+  "filename": "htop.spk",
+  "sha256": "99336147312d3f90cffb4e73f8f008255421fc3dd2df8d4ada5240569f8603e5",
+  "size": "4669440"
+}
