@@ -10,6 +10,8 @@
 #              Honored so `spk get <pkg> --root DIR` configures DIR, not /.
 #
 # What it does (under $ROOT):
+#   0) Overlays the payload's usr/ and etc/ into the system (libs, kernel
+#      modules, firmware, Xorg/udev data) and records them for `spk rm`
 #   1) Writes etc/modprobe.d/nvidia.conf (blacklist nouveau/nova + nvidia opts)
 #   2) Ensures etc/default/grub GRUB_CMDLINE_LINUX_DEFAULT contains:
 #        nvidia-drm.modeset=1 nvidia-drm.fbdev=1 modprobe.blacklist=nouveau,nova_core,nova_drm
@@ -42,6 +44,58 @@ if [ "$(id -u)" -ne 0 ] && [ -z "$PREFIX" ]; then
     die "run as root: sudo nvidia-grub-setup"
 fi
 
+# 0) Overlay the payload into the system. spk isolates payloads under
+# <root>/spk_pkgs/<pkg>, but kernel modules, firmware, Xorg/udev data and
+# GL/Vulkan libs only work from their real locations - the loader, modprobe
+# and Xorg never look inside the payload (this is why nvidia-smi used to
+# fail with "couldn't find libnvidia-ml.so"). Copy - never move, spk still
+# owns the payload - usr/ and etc/ over the target and record every
+# installed path for `spk rm` in $SPK_APPDIR/system-files. For --root
+# installs everything lands under $PREFIX instead of /.
+if [ -n "${SPK_PKGDIR:-}" ] && [ -d "$SPK_PKGDIR/usr" ]; then
+    LISTFILE=""
+    if [ -n "${SPK_APPDIR:-}" ]; then
+        mkdir -p "$SPK_APPDIR" 2>/dev/null || true
+        LISTFILE="$SPK_APPDIR/system-files"
+        : > "$LISTFILE" 2>/dev/null || LISTFILE=""
+    fi
+    for _sub in usr etc; do
+        [ -d "$SPK_PKGDIR/$_sub" ] || continue
+        mkdir -p "$PREFIX/$_sub" 2>/dev/null || die "cannot create $PREFIX/$_sub (run as root?)"
+        if cp -a "$SPK_PKGDIR/$_sub/." "$PREFIX/$_sub/" 2>/dev/null; then
+            log "installed $SPK_PKGDIR/$_sub -> $PREFIX/$_sub"
+        else
+            die "cannot copy $SPK_PKGDIR/$_sub to $PREFIX/$_sub (run as root?)"
+        fi
+        if [ -n "$LISTFILE" ]; then
+            ( cd "$SPK_PKGDIR/$_sub" 2>/dev/null && find . -mindepth 1 \( -type f -o -type l \) | sed 's,^\./,,' | while IFS= read -r _rel; do
+                printf '%s\n' "$PREFIX/$_sub/$_rel"
+            done >> "$LISTFILE" ) 2>/dev/null || true
+        fi
+    done
+    # one cache refresh for the overlaid libs (/usr/lib works without it
+    # too, but only the cache covers every loader lookup)
+    if command -v ldconfig >/dev/null 2>&1; then
+        if [ -n "$PREFIX" ]; then
+            ldconfig -r "$PREFIX" 2>/dev/null || warn "ldconfig -r $PREFIX failed; run ldconfig inside the target."
+        else
+            ldconfig 2>/dev/null || warn "ldconfig failed; run ldconfig by hand."
+        fi
+    else
+        warn "ldconfig not found; newly installed libs may need a manual ldconfig."
+    fi
+fi
+
+# The payload carries prebuilt modules for $PKG_KVER only - a different
+# booted kernel will not load them, no matter what the rest of this script
+# configures.
+if [ -z "$PREFIX" ]; then
+    _kver="$(uname -r 2>/dev/null || true)"
+    if [ -n "$_kver" ] && [ "$_kver" != "$PKG_KVER" ]; then
+        warn "running kernel $_kver != prebuilt modules $PKG_KVER; boot the $PKG_KVER kernel (spk linux package) or the driver will not load."
+    fi
+fi
+
 # 1) modprobe blacklist + nvidia options (early-KMS safe, survives updates).
 mkdir -p "$PREFIX/etc/modprobe.d"
 cat > "$MODPROBE_CONF" <<'EOF'
@@ -59,6 +113,11 @@ options nvidia-drm modeset=1 fbdev=1
 EOF
 chmod 644 "$MODPROBE_CONF"
 log "wrote $MODPROBE_CONF"
+# removing the package must un-blacklist nouveau again - track this file for
+# `spk rm` too (harmless if LISTFILE is unset, e.g. on manual re-runs)
+if [ -n "${LISTFILE:-}" ]; then
+    printf '%s\n' "$MODPROBE_CONF" >> "$LISTFILE" 2>/dev/null || true
+fi
 
 # 2) Patch grub defaults idempotently.
 if [ ! -f "$GRUB_DEFAULT" ]; then
