@@ -13,16 +13,20 @@
 #   0) Overlays the payload's usr/ and etc/ into the system (libs, kernel
 #      modules, firmware, Xorg/udev data) and records them for `spk rm`
 #   1) Writes etc/modprobe.d/nvidia.conf (blacklist nouveau/nova + nvidia opts)
-#   2) Ensures etc/default/grub GRUB_CMDLINE_LINUX_DEFAULT contains:
+#   2) On grub-mkconfig-managed systems: ensures etc/default/grub
+#      GRUB_CMDLINE_LINUX_DEFAULT contains:
 #        nvidia-drm.modeset=1 nvidia-drm.fbdev=1 modprobe.blacklist=nouveau,nova_core,nova_drm
-#   3) Runs depmod for the shipped 7.2.0 modules (and the running kernel)
-#   4) Regenerates boot/grub/grub.cfg via grub-mkconfig (live system only)
-#   5) Tries to rebuild the initramfs so the blacklist takes effect early
-#      (live system only; for --root targets it prints what to run instead)
+#   3) Runs depmod for every shipped kernel release (and the running kernel)
+#   4) Bootloader cmdline: regenerates grub.cfg via grub-mkconfig where it
+#      manages the config, otherwise patches a static grub.cfg's `linux`
+#      lines directly (Silen) - never a blind regen (that caused grub rescue)
+#   5) Tries to rebuild the initramfs so the blacklist takes effect early,
+#      but only when a rebuild tool exists (live system only; for --root
+#      targets it prints what to run instead)
 set -eu
 
 WANT_PARAMS="nvidia-drm.modeset=1 nvidia-drm.fbdev=1 modprobe.blacklist=nouveau,nova_core,nova_drm"
-PKG_KVER="7.2.0"
+PKG_KVERS="7.2.0 7.2.4-zen2-1-zen"
 
 log() { printf '%s\n' "$*"; }
 warn() { printf 'warning: %s\n' "$*" >&2; }
@@ -86,14 +90,15 @@ if [ -n "${SPK_PKGDIR:-}" ] && [ -d "$SPK_PKGDIR/usr" ]; then
     fi
 fi
 
-# The payload carries prebuilt modules for $PKG_KVER only - a different
+# The payload carries prebuilt modules for $PKG_KVERS only - any other
 # booted kernel will not load them, no matter what the rest of this script
 # configures.
 if [ -z "$PREFIX" ]; then
     _kver="$(uname -r 2>/dev/null || true)"
-    if [ -n "$_kver" ] && [ "$_kver" != "$PKG_KVER" ]; then
-        warn "running kernel $_kver != prebuilt modules $PKG_KVER; boot the $PKG_KVER kernel (spk linux package) or the driver will not load."
-    fi
+    case " $PKG_KVERS " in
+        *" $_kver "*) ;;
+        *) warn "running kernel ${_kver:-unknown} not covered by prebuilt modules ($PKG_KVERS); the driver will not load on this kernel." ;;
+    esac
 fi
 
 # 1) modprobe blacklist + nvidia options (early-KMS safe, survives updates).
@@ -119,10 +124,10 @@ if [ -n "${LISTFILE:-}" ]; then
     printf '%s\n' "$MODPROBE_CONF" >> "$LISTFILE" 2>/dev/null || true
 fi
 
-# 2) Patch grub defaults idempotently.
-if [ ! -f "$GRUB_DEFAULT" ]; then
-    warn "$GRUB_DEFAULT not found; skipping GRUB cmdline patch."
-else
+# 2) grub-mkconfig-managed systems (/etc/default/grub exists): patch the
+# defaults idempotently. Static grub.cfg systems (Silen) are handled in
+# step 4 below; anything else is reported there too.
+if [ -f "$GRUB_DEFAULT" ]; then
     # date is missing on truly minimal systems - fall back to the pid so a
     # missing date can never fail the install (the backup name just carries
     # no timestamp then).
@@ -167,20 +172,25 @@ else
     log "effective: $(grep '^GRUB_CMDLINE_LINUX_DEFAULT=' "$GRUB_DEFAULT" || echo '(missing)')"
 fi
 
-# 3) depmod so the prebuilt 7.2.0 modules (and DKMS rebuilds) resolve.
+# 3) depmod for every kernel release this payload ships modules for, plus
+# the running kernel on live systems.
 if command -v depmod >/dev/null 2>&1; then
-    if [ -n "$PREFIX" ]; then
-        if [ -d "$PREFIX/lib/modules/$PKG_KVER" ]; then
-            depmod -b "$PREFIX" -a "$PKG_KVER" 2>/dev/null || depmod -b "$PREFIX" "$PKG_KVER" 2>/dev/null || warn "depmod -b $PREFIX for $PKG_KVER failed"
-            log "ran depmod -b $PREFIX for $PKG_KVER"
+    for _kv in $PKG_KVERS; do
+        if [ -n "$PREFIX" ]; then
+            if [ -d "$PREFIX/lib/modules/$_kv" ]; then
+                depmod -b "$PREFIX" -a "$_kv" 2>/dev/null || depmod -b "$PREFIX" "$_kv" 2>/dev/null || warn "depmod -b $PREFIX for $_kv failed"
+                log "ran depmod -b $PREFIX for $_kv"
+            else
+                log "no $PREFIX/lib/modules/$_kv; skipping depmod for target"
+            fi
         else
-            log "no $PREFIX/lib/modules/$PKG_KVER; skipping depmod for target"
+            if [ -d "/lib/modules/$_kv" ]; then
+                depmod -a "$_kv" 2>/dev/null || warn "depmod -a $_kv failed"
+                log "ran depmod for $_kv"
+            fi
         fi
-    else
-        if [ -d "/lib/modules/$PKG_KVER" ]; then
-            depmod -a "$PKG_KVER" 2>/dev/null || warn "depmod -a $PKG_KVER failed"
-            log "ran depmod for $PKG_KVER"
-        fi
+    done
+    if [ -z "$PREFIX" ]; then
         if [ -d "/lib/modules/$(uname -r)" ]; then
             depmod -a "$(uname -r)" 2>/dev/null || depmod -a || true
             log "ran depmod for $(uname -r)"
@@ -193,40 +203,106 @@ else
     warn "depmod not found; skipping."
 fi
 
-# Steps 4-5 touch the running bootloader/initramfs: only valid on the live
-# system. For --root installs the files above are staged under $ROOT and the
-# target's own boot must be configured from inside it.
+# 4) Bootloader kernel cmdline. grub-mkconfig-managed systems were handled
+# in step 2 (defaults file); regenerating there happens below, live only.
+# Static grub.cfg systems (Silen writes its grub.cfg by hand) get their
+# `linux` boot lines patched directly - NEVER run grub-mkconfig on those:
+# it replaces the static config with a probed one and can leave the system
+# in grub rescue.
+if [ -f "$GRUB_DEFAULT" ]; then
+    if [ -z "$PREFIX" ]; then
+        if command -v grub-mkconfig >/dev/null 2>&1; then
+            mkdir -p "$(dirname "$GRUB_CFG")"
+            if grub-mkconfig -o "$GRUB_CFG"; then
+                log "regenerated $GRUB_CFG via grub-mkconfig"
+            else
+                rc=$?
+                warn "grub-mkconfig failed (exit $rc); GRUB menu NOT regenerated - fix grub, then rerun: grub-mkconfig -o $GRUB_CFG"
+            fi
+        elif command -v update-grub >/dev/null 2>&1; then
+            if update-grub; then
+                log "regenerated GRUB via update-grub"
+            else
+                rc=$?
+                warn "update-grub failed (exit $rc); GRUB menu NOT regenerated - rerun update-grub by hand."
+            fi
+        else
+            warn "neither grub-mkconfig nor update-grub found; reinstall grub package and rerun."
+        fi
+    else
+        log "GRUB defaults staged under $PREFIX; regenerate inside the target (chroot $PREFIX nvidia-grub-setup)."
+    fi
+elif [ -f "$GRUB_CFG" ] && ! grep -q -E "grub-mkconfig|DO NOT EDIT THIS FILE" "$GRUB_CFG" 2>/dev/null; then
+    # static config: append our params to every `linux` boot line, idempotently
+    if ! command -v awk >/dev/null 2>&1; then
+        warn "awk not found; cannot patch $GRUB_CFG - add to its linux line(s) by hand: $WANT_PARAMS"
+    else
+        _nlinux="$(grep -c '^[[:space:]]*linux[[:space:]]' "$GRUB_CFG" 2>/dev/null || true)"
+        if [ "$_nlinux" = "0" ]; then
+            warn "$GRUB_CFG has no linux boot lines; add by hand: $WANT_PARAMS"
+        else
+            stamp="$(date +%Y%m%d%H%M%S 2>/dev/null || printf 'no-date-%s' "$$")"
+            cp -a "$GRUB_CFG" "$GRUB_CFG.bak.$stamp" 2>/dev/null || warn "cannot back up $GRUB_CFG; continuing."
+            tmp="$(mktemp 2>/dev/null || printf '%s/nvidia-grub-setup.%s.tmp' "${TMPDIR:-/tmp}" "$$")"
+            if [ -z "$tmp" ]; then
+                warn "cannot create temp file; add to $GRUB_CFG linux line(s) by hand: $WANT_PARAMS"
+            elif awk -v params="$WANT_PARAMS" '
+                /^[[:space:]]*linux[[:space:]]/ {
+                    line = $0
+                    n = split(params, want, " ")
+                    for (i = 1; i <= n; i++)
+                        if (index(" " line " ", " " want[i] " ") == 0)
+                            line = line " " want[i]
+                    print line
+                    next
+                }
+                { print }
+            ' "$GRUB_CFG" > "$tmp" 2>/dev/null; then
+                if cmp -s "$tmp" "$GRUB_CFG"; then
+                    log "$GRUB_CFG already contains NVIDIA params; no change."
+                elif [ "$(grep -c '^[[:space:]]*linux[[:space:]]' "$tmp" 2>/dev/null || true)" = "$_nlinux" ]; then
+                    if cat "$tmp" > "$GRUB_CFG" 2>/dev/null; then
+                        log "patched $GRUB_CFG:"
+                        grep '^[[:space:]]*linux[[:space:]]' "$GRUB_CFG" || true
+                    else
+                        warn "could not write $GRUB_CFG; add by hand: $WANT_PARAMS"
+                    fi
+                else
+                    warn "refusing to write $GRUB_CFG (linux lines changed shape); add by hand: $WANT_PARAMS"
+                fi
+            else
+                warn "could not patch $GRUB_CFG; add to its linux line(s) by hand: $WANT_PARAMS"
+            fi
+            rm -f "$tmp" 2>/dev/null || true
+        fi
+    fi
+elif [ -f "$GRUB_CFG" ]; then
+    warn "$GRUB_CFG looks grub-mkconfig-managed but $GRUB_DEFAULT is missing; regenerate it by hand."
+else
+    warn "no GRUB config found ($GRUB_CFG missing and no $GRUB_DEFAULT); add to your bootloader by hand: $WANT_PARAMS"
+fi
+
+# Only file edits happen above, so they are safe under --root too. Rebuilding
+# an initramfs or regenerating grub for real must happen inside the target.
 if [ -n "$PREFIX" ]; then
-    log "installed into $PREFIX: GRUB config and modprobe staged, not activated."
-    log "to activate inside that target, run: chroot $PREFIX nvidia-grub-setup"
-    log "done. Then reboot that system and verify: cat /proc/cmdline should show nvidia-drm.modeset=1 and modprobe.blacklist; lsmod should show nvidia, not nouveau."
+    log "installed into $PREFIX: payload, modprobe and bootloader config staged."
+    log "if that target rebuilds its initramfs with mkinitcpio/dracut, chroot in and rerun this script there."
+    log "then reboot it and verify: cat /proc/cmdline should show nvidia-drm.modeset=1 and modprobe.blacklist; lsmod should show nvidia, not nouveau."
     exit 0
 fi
 
-# 4) Regenerate GRUB config. Best effort only: a present-but-broken
-# grub-mkconfig (e.g. missing helpers in a minimal grub bundle) used to kill
-# the whole install with its own exit code (127 when a helper is not found),
-# even though the modprobe/grub-default changes above are the important part.
-if command -v grub-mkconfig >/dev/null 2>&1; then
-    mkdir -p "$(dirname "$GRUB_CFG")"
-    if grub-mkconfig -o "$GRUB_CFG"; then
-        log "regenerated $GRUB_CFG via grub-mkconfig"
-    else
-        rc=$?
-        warn "grub-mkconfig failed (exit $rc); GRUB menu NOT regenerated - fix grub, then rerun: grub-mkconfig -o $GRUB_CFG"
-    fi
-elif command -v update-grub >/dev/null 2>&1; then
-    if update-grub; then
-        log "regenerated GRUB via update-grub"
-    else
-        rc=$?
-        warn "update-grub failed (exit $rc); GRUB menu NOT regenerated - rerun update-grub by hand."
-    fi
+# 5) Rebuild initramfs so nouveau stays out of early boot - but only when
+# something can actually rebuild it. Silen boots a prebuilt initramfs with
+# no rebuild tool on target, and there the kernel cmdline blacklist patched
+# above already covers early boot.
+_uses_initrd=""
+if grep -q -E '^[[:space:]]*initrd[[:space:]]' "$GRUB_CFG" 2>/dev/null; then
+    _uses_initrd="1"
 else
-    warn "neither grub-mkconfig nor update-grub found; reinstall grub package and rerun."
+    for _ird in /boot/initramfs.* /boot/initrd* /initramfs.* ; do
+        [ -f "$_ird" ] && { _uses_initrd="1"; break; }
+    done
 fi
-
-# 5) Rebuild initramfs so nouveau stays out of early boot.
 rebuilt=""
 if command -v mkinitcpio >/dev/null 2>&1; then
     mkinitcpio -P && rebuilt="mkinitcpio -P"
@@ -239,8 +315,10 @@ elif command -v booster >/dev/null 2>&1; then
 fi
 if [ -n "$rebuilt" ]; then
     log "rebuilt initramfs via $rebuilt"
+elif [ -n "$_uses_initrd" ]; then
+    warn "no initramfs tool found but boot uses an initrd; the kernel cmdline blacklist (patched above) still covers early boot - rebuild the initramfs when you can."
 else
-    warn "no initramfs tool (mkinitcpio/dracut/update-initramfs) found; if you use an initramfs, rebuild it manually so the blacklist applies early."
+    log "no initramfs in boot config; nothing to rebuild."
 fi
 
 log "done. Verify: cat /proc/cmdline should show nvidia-drm.modeset=1 and modprobe.blacklist; lsmod should show nvidia, not nouveau. Then reboot."
