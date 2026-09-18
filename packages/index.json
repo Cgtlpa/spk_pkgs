@@ -543,7 +543,7 @@
     "architecture": "x86_64",
     "description": "NVIDIA driver 580 legacy (Maxwell/Pascal/Volta) with prebuilt 7.2.0 kernel modules and grub nouveau-blacklist setup",
     "filename": "nvidia-legacy.spk",
-    "sha256": "b72679ee03fdd034bb36984694d5e5cceb21eb8c8da61a59d9ce80dea2386e10",
+    "sha256": "47159168b39e8dbed3daea646837d4caf74abfb718c6197c05cdaa3302d31156",
     "size": "1163837440",
     "parts": "13"
   },
