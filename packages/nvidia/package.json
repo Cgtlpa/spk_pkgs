@@ -4,7 +4,7 @@
   "architecture": "x86_64",
   "description": "NVIDIA driver 595 series with prebuilt 7.2.0 kernel modules and grub nouveau-blacklist setup",
   "filename": "nvidia.spk",
-  "sha256": "a1c7a55c7ad9b2cd6956a1d22717eb31a92145a83f156daf7238e457f9c543e8",
+  "sha256": "d476b61a8290969b50c23d0d176d0b18c1585976a4d2508f7b65bfe5640e66b3",
   "size": "807772160",
   "parts": "9"
 }
