@@ -1,0 +1,10 @@
+{
+  "name": "nvidia",
+  "version": "595.99.02",
+  "architecture": "x86_64",
+  "description": "NVIDIA driver 595 series with prebuilt 7.2.0 kernel modules and grub nouveau-blacklist setup",
+  "filename": "nvidia.spk",
+  "sha256": "3ad4af2956f80e72f1fba303da2dce803204278840d1af7c7bbac52a23493a72",
+  "size": "807772160",
+  "parts": "9"
+}

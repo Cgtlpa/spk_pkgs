@@ -18,6 +18,16 @@
     "size": "14735360"
   },
   {
+    "name": "amd",
+    "version": "26.2.2",
+    "architecture": "x86_64",
+    "description": "AMD GPU driver stack (Mesa radeonsi/R600, RADV, amdgpu) with prebuilt 7.2.0 kernel modules and grub setup",
+    "filename": "amd.spk",
+    "sha256": "8cd10315ff4ea2e4f24a06c7b0657223affad09bd91a7757c9d6b8be19593bb8",
+    "size": "460544000",
+    "parts": "5"
+  },
+  {
     "name": "aria2",
     "version": "1.37.0",
     "architecture": "x86_64",
@@ -150,6 +160,15 @@
     "filename": "duf.spk",
     "sha256": "99637a602913ba9626225b60d3a638b762599ea17e32c23a64ae70ff5bd31e7d",
     "size": "5642240"
+  },
+  {
+    "name": "elogind",
+    "version": "255.24",
+    "architecture": "x86_64",
+    "description": "standalone logind for OpenRC (login/session/seat manager)",
+    "filename": "elogind.spk",
+    "sha256": "f5ebe15b6527eccefb3c50eb50044ff4ac0b50265fee956ec405642f3e579b09",
+    "size": "5017600"
   },
   {
     "name": "emacs",
@@ -507,6 +526,26 @@
     "filename": "nmap.spk",
     "sha256": "dd58219b1e5a6e2d110774e414a7ceec06039e63b569b6c2d315adda1af8b3a1",
     "size": "46407680"
+  },
+  {
+    "name": "nvidia",
+    "version": "595.99.02",
+    "architecture": "x86_64",
+    "description": "NVIDIA driver 595 series with prebuilt 7.2.0 kernel modules and grub nouveau-blacklist setup",
+    "filename": "nvidia.spk",
+    "sha256": "3ad4af2956f80e72f1fba303da2dce803204278840d1af7c7bbac52a23493a72",
+    "size": "807772160",
+    "parts": "9"
+  },
+  {
+    "name": "nvidia-legacy",
+    "version": "580.178.04",
+    "architecture": "x86_64",
+    "description": "NVIDIA driver 580 legacy (Maxwell/Pascal/Volta) with prebuilt 7.2.0 kernel modules and grub nouveau-blacklist setup",
+    "filename": "nvidia-legacy.spk",
+    "sha256": "b72679ee03fdd034bb36984694d5e5cceb21eb8c8da61a59d9ce80dea2386e10",
+    "size": "1163837440",
+    "parts": "13"
   },
   {
     "name": "nvim",
