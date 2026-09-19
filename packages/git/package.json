@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "Git distributed version control system",
   "filename": "git.spk",
-  "sha256": "6a315b4bc722ac9d44db154d7e6fff499610ab379834a01855809c9a3615f050",
-  "size": "196515840"
+  "sha256": "a4abcd2d67d972431e9cd22a59199b786c0772bf11edeb3d3ba9bfe5628c4364",
+  "size": "51886080"
 }
