@@ -1,9 +1,9 @@
 {
   "name": "which",
-  "version": "2.25",
+  "version": "2.23",
   "architecture": "x86_64",
   "description": "locate a command in PATH",
   "filename": "which.spk",
-  "sha256": "406bd38f40d2c6cfa740c2b66502b60ed544f5ad7dfd98505652e75ac76333bc",
-  "size": "2519040"
+  "sha256": "2e7ba529928112c6c345b883f67d69e4ad1f1b927b0a7fdd88cece23a729f4e1",
+  "size": "61440"
 }
