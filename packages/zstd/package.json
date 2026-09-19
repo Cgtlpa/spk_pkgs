@@ -1,9 +1,9 @@
 {
   "name": "zstd",
-  "version": "1.5.7",
+  "version": "1.5.7-r1",
   "architecture": "x86_64",
   "description": "Zstandard compression (zstd)",
   "filename": "zstd.spk",
-  "sha256": "ae2188c231c3c94a4ec466c86f743c106d05a019de977026ba2f12b105ba2246",
-  "size": "4116480"
+  "sha256": "3226094cdb7dbfc4f92c2662b61d7e5c40ef09ccf46391038ad9b567ed829b78",
+  "size": "1556480"
 }
