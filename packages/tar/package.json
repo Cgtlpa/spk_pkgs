@@ -1,9 +1,9 @@
 {
   "name": "tar",
-  "version": "1.35",
+  "version": "1.35-r1",
   "architecture": "x86_64",
   "description": "GNU tar archiving utility",
   "filename": "tar.spk",
-  "sha256": "7af6f3f46eaa42841bef58dd5b6d10c8959f249db2094bff341108d9931e3e05",
-  "size": "2969600"
+  "sha256": "e58af2412dd93b122e462eee41bd9efa3134e751c5e482ed8edb4dbb0df776b7",
+  "size": "3164160"
 }
