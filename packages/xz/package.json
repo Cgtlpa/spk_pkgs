@@ -1,9 +1,9 @@
 {
   "name": "xz",
-  "version": "5.8.4",
+  "version": "5.8.3",
   "architecture": "x86_64",
   "description": "xz/lzma compression utilities",
   "filename": "xz.spk",
-  "sha256": "16818e5d819c6e64071317c72931d98422a0fb11502602b89a98f789a3d3f939",
-  "size": "2846720"
+  "sha256": "6c3aa30a85221360e4d97cfa01caee9f92d46415aeb4fcfdf2e9715aed59d17d",
+  "size": "1781760"
 }
