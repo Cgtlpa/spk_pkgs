@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "list open files (lsof)",
   "filename": "lsof.spk",
-  "sha256": "73f393d4521a7132b7df895bf2d9abe2354466c127711eaa411b915e3bebb622",
-  "size": "4444160"
+  "sha256": "bf5e4b6ff56e51ab0588f01e727c37f7317bb3f5bcca9faa97d814a1fe3e3f30",
+  "size": "440320"
 }
