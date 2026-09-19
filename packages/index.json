@@ -467,13 +467,14 @@
   },
   {
     "name": "kde",
-    "version": "6.7.4",
+    "version": "6.6.6",
     "architecture": "x86_64",
     "description": "KDE Plasma desktop environment (full)",
     "filename": "kde.spk",
-    "sha256": "fd05fe75808b14ed24a13509ec568c29b30815141632bb95070aef10c2949536",
-    "size": "2666608640",
-    "system": true
+    "sha256": "2a59a2c863c0410e0fef8aad3a6567942b06ea90cbec12378d97fb26dbf5ac32",
+    "size": "2301081600",
+    "system": true,
+    "parts": "25"
   },
   {
     "name": "kitty",
