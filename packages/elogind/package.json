@@ -4,7 +4,7 @@
   "architecture": "x86_64",
   "description": "standalone logind for OpenRC (login/session/seat manager)",
   "filename": "elogind.spk",
-  "sha256": "f5ebe15b6527eccefb3c50eb50044ff4ac0b50265fee956ec405642f3e579b09",
+  "sha256": "0d82bf8d47d86007e15e1784af62a83863545b4e6ffcb3b0d51ef0b34ae6818f",
   "size": "5017600",
   "system": true
 }
