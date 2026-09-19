@@ -1,9 +1,9 @@
 {
   "name": "sqlite",
-  "version": "3.53.4",
+  "version": "3.53.3",
   "architecture": "x86_64",
   "description": "SQLite database shell (sqlite3)",
   "filename": "sqlite.spk",
-  "sha256": "317fdcca50a12b8f4f7e8d7048a96617ab2dd5bc4a4d5d16381384413aa53fbe",
-  "size": "6778880"
+  "sha256": "4a77e228684958bc8ef360acc6cd7501e7c457cc0518c61cdcb1af57882d6cd0",
+  "size": "4454400"
 }
