@@ -1,0 +1,10 @@
+{
+  "name": "seatd",
+  "version": "0.9.3",
+  "architecture": "x86_64",
+  "description": "seat management daemon for Wayland compositors (non-root sessions)",
+  "filename": "seatd.spk",
+  "sha256": "81e7feb4609a682584855ceaceba14d9e11e6a27bb490d351937ac4329fb4b12",
+  "size": "143360",
+  "system": true
+}

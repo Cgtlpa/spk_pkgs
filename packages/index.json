@@ -632,6 +632,16 @@
     "system": true
   },
   {
+    "name": "seatd",
+    "version": "0.9.3",
+    "architecture": "x86_64",
+    "description": "seat management daemon for Wayland compositors (non-root sessions)",
+    "filename": "seatd.spk",
+    "sha256": "81e7feb4609a682584855ceaceba14d9e11e6a27bb490d351937ac4329fb4b12",
+    "size": "143360",
+    "system": true
+  },
+  {
     "name": "sed",
     "version": "4.10",
     "architecture": "x86_64",
@@ -755,6 +765,16 @@
     "filename": "xfce4.spk",
     "sha256": "2927cf00d7b066025b9a3ef7647f8225ac1860e305a4d3851f9ee468118ef68e",
     "size": "799784960",
+    "system": true
+  },
+  {
+    "name": "xorg-server",
+    "version": "21.1.24",
+    "architecture": "x86_64",
+    "description": "Xorg X server with fbdev/vesa/amdgpu/nouveau/modesetting drivers and libinput",
+    "filename": "xorg-server.spk",
+    "sha256": "69c79b1304bc0c9af4da474713400c27d560c09d9ea74ca53a2695937017bbd2",
+    "size": "7464960",
     "system": true
   },
   {
