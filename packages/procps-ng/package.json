@@ -1,9 +1,9 @@
 {
   "name": "procps-ng",
-  "version": "4.0.7",
+  "version": "4.0.6",
   "architecture": "x86_64",
   "description": "ps/top/free/uptime process and system tools",
   "filename": "procps-ng.spk",
-  "sha256": "3b73a0ea00c5386d6eabd39c719736f90ef1dd03d4afbdb9fd3a29b40e0f68c0",
-  "size": "5376000"
+  "sha256": "5fdc6db7bf5438806609b4303de53bff0e0619a42b54314ac1f533d5657e03b1",
+  "size": "2928640"
 }
