@@ -1,9 +1,9 @@
 {
   "name": "foot",
-  "version": "1.28.0",
+  "version": "1.24.0",
   "architecture": "x86_64",
   "description": "foot - a fast, lightweight Wayland terminal emulator",
   "filename": "foot.spk",
-  "sha256": "3fdd53c429094f5f22d4ba1cbb2d2648d9627c37f47a787939907374c6068235",
-  "size": "11960320"
+  "sha256": "69af9e5ac3b636c3b1fb648584c38fdb1bd710a06e8f98d8337a19aaf7a9d5b2",
+  "size": "6809600"
 }

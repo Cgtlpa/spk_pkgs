@@ -20,12 +20,12 @@
   },
   {
     "name": "alacritty",
-    "version": "0.17.0",
+    "version": "0.16.1",
     "architecture": "x86_64",
     "description": "Alacritty - a cross-platform GPU-accelerated terminal emulator",
     "filename": "alacritty.spk",
-    "sha256": "807357812939d1d230b34eccfbcd98e5a4dd57a00ee80a54e1fc0da4b83eaf29",
-    "size": "14735360"
+    "sha256": "b45d121f680690b9d6381e0e5d7dd3ff33c3aec900752bb4e1fd1e4f89ce76aa",
+    "size": "9707520"
   },
   {
     "name": "amd",
@@ -291,12 +291,12 @@
   },
   {
     "name": "foot",
-    "version": "1.28.0",
+    "version": "1.24.0",
     "architecture": "x86_64",
     "description": "foot - a fast, lightweight Wayland terminal emulator",
     "filename": "foot.spk",
-    "sha256": "3fdd53c429094f5f22d4ba1cbb2d2648d9627c37f47a787939907374c6068235",
-    "size": "11960320"
+    "sha256": "69af9e5ac3b636c3b1fb648584c38fdb1bd710a06e8f98d8337a19aaf7a9d5b2",
+    "size": "6809600"
   },
   {
     "name": "fzf",
@@ -325,6 +325,15 @@
     "sha256": "32d95eee0497a1bc06fb3e31f0d9b6795440537246ed17fe32623163eb3228ad",
     "size": "281835520",
     "parts": "3"
+  },
+  {
+    "name": "gdb",
+    "version": "17.2",
+    "architecture": "x86_64",
+    "description": "GNU debugger",
+    "filename": "gdb.spk",
+    "sha256": "0193b9a5f2bb620695cf6369adc5593f040f688f58624f1e9cd31444670dc683",
+    "size": "14182400"
   },
   {
     "name": "gettext",
@@ -660,12 +669,12 @@
   },
   {
     "name": "nvim",
-    "version": "0.12.5",
+    "version": "0.11.7",
     "architecture": "x86_64",
     "description": "Neovim - hyperextensible Vim-based text editor",
     "filename": "nvim.spk",
-    "sha256": "4b430bee2534df5bb41e58765f2352b81a9f29f9bb0e8dcdcbb1eb4ebb2b2487",
-    "size": "35020800"
+    "sha256": "9cbe02678dae6a8d8daed4bb30bb87c94f1eb14758159d7a9e3777d1bad07beb",
+    "size": "28702720"
   },
   {
     "name": "openssh",
