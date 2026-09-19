@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "kitty - the fast, feature-rich GPU-based terminal emulator",
   "filename": "kitty.spk",
-  "sha256": "36d1a8456392b1875169388b395f0389965f8d1eca92137d713988ada3a1b37f",
-  "size": "54876160"
+  "sha256": "2a18165ac9acc27aa280b3e5d71e6be2997df17977fb9d459fcf10f2952c467f",
+  "size": "79626240"
 }
