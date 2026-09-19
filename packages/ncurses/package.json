@@ -1,9 +1,9 @@
 {
   "name": "ncurses",
-  "version": "6.6",
+  "version": "6.5_p20251220",
   "architecture": "x86_64",
   "description": "ncurses terminal utilities (tput/tic/infocmp)",
   "filename": "ncurses.spk",
-  "sha256": "60d2c677822672243f7b059f101ac4e29a8e00fd80e8f2ae70d05cb4ea0ad6ef",
-  "size": "3205120"
+  "sha256": "79a95d9402b4a3ffe8d03261bc208c5c0b99c1ff41bcec9d9d8a8d9544d80761",
+  "size": "9861120"
 }
