@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "kernel module utilities (modprobe/lsmod)",
   "filename": "kmod.spk",
-  "sha256": "3dba947453c3834de602fa519198f255b9ca50d84442d4db699a9980bd230963",
-  "size": "12288000"
+  "sha256": "42e067925ec11a8160d6f200931b80217810cf8a96b3eb0658072b23a67816ab",
+  "size": "409600"
 }
