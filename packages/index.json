@@ -78,8 +78,8 @@
     "architecture": "x86_64",
     "description": "arbitrary-precision calculator",
     "filename": "bc.spk",
-    "sha256": "b492c6e5c43a4699eed4ccaffd069bfeabb3e5ea0c98ce82d66fcc772d83ef98",
-    "size": "3461120"
+    "sha256": "860140496716ad9599f6b4e19d8b7d65c376054b5802f2d8e8a8d828b662b6d5",
+    "size": "225280"
   },
   {
     "name": "bind",
@@ -101,12 +101,12 @@
   },
   {
     "name": "bzip2",
-    "version": "1.0.8",
+    "version": "1.0.8-r5",
     "architecture": "x86_64",
     "description": "bzip2 data compressor",
     "filename": "bzip2.spk",
-    "sha256": "9a8df66f8c50cba80556ccad04d8d1cf07096c200641a12303dbee9474963114",
-    "size": "2631680"
+    "sha256": "d8e2a1264100bf5cd72e93e1c7be5bd8edfffebb4d77f82b3625308f50915f0b",
+    "size": "512000"
   },
   {
     "name": "clang",
@@ -324,8 +324,8 @@
     "architecture": "x86_64",
     "description": "GNU grep pattern matcher",
     "filename": "grep.spk",
-    "sha256": "c38203a2ef7a1202c4b84417118af92c19493a7194929cf24a9cef8f1702bfc2",
-    "size": "3379200"
+    "sha256": "25b9bfa5fce6db14f088072947ab8d08d911dee1a70327e969ae569d52464fe4",
+    "size": "1177600"
   },
   {
     "name": "grub",
@@ -341,8 +341,8 @@
     "architecture": "x86_64",
     "description": "GNU compression utilities (gzip)",
     "filename": "gzip.spk",
-    "sha256": "766d7c9b11cf09529c4d0a45ddaf9c35cf6e5fc9483996b7c6fcca2cd53c0965",
-    "size": "2631680"
+    "sha256": "c278c9873083444ca053ba16ef6171e4174ead0ec424730f4530a9aacc358b6d",
+    "size": "266240"
   },
   {
     "name": "htop",
@@ -586,12 +586,12 @@
   },
   {
     "name": "patch",
-    "version": "2.8",
+    "version": "2.8-r1",
     "architecture": "x86_64",
     "description": "apply diffs to files (patch)",
     "filename": "patch.spk",
-    "sha256": "cb4fa3e1270245a364176efa7da1ed6e76dd523156ba4c972dbde9a4a687ab47",
-    "size": "2682880"
+    "sha256": "4320ed38381b3533189fde86b0b8b2ddded649e821e4d3a63ced3484a13e6b48",
+    "size": "225280"
   },
   {
     "name": "pkgconf",
@@ -663,12 +663,12 @@
   },
   {
     "name": "sed",
-    "version": "4.10",
+    "version": "4.10-r1",
     "architecture": "x86_64",
     "description": "GNU stream editor",
     "filename": "sed.spk",
-    "sha256": "b4d9e31050d7d07d89795469cdfe0896ef48899a8be999dbe4900a888eae45ba",
-    "size": "2631680"
+    "sha256": "5c1a3f6a93b6178438cc658c03029599c054e0593d41aedc34b8557e18be77ff",
+    "size": "983040"
   },
   {
     "name": "sqlite",
@@ -726,12 +726,12 @@
   },
   {
     "name": "unzip",
-    "version": "6.0",
+    "version": "6.0_p31",
     "architecture": "x86_64",
     "description": "unzip archive extraction utility",
     "filename": "unzip.spk",
-    "sha256": "c1a0d3e0b51c8b92603f8633c0e9a0495f1bdde5cf255bf4cfdf0fc93f77a288",
-    "size": "2938880"
+    "sha256": "2f4e781a1d2efb8c2903dc15f7792a99b7de3ba4b40fb62cccafe7ac15d763cc",
+    "size": "481280"
   },
   {
     "name": "upower",
@@ -819,12 +819,12 @@
   },
   {
     "name": "xz",
-    "version": "5.8.4",
+    "version": "5.8.3",
     "architecture": "x86_64",
     "description": "xz/lzma compression utilities",
     "filename": "xz.spk",
-    "sha256": "16818e5d819c6e64071317c72931d98422a0fb11502602b89a98f789a3d3f939",
-    "size": "2846720"
+    "sha256": "6c3aa30a85221360e4d97cfa01caee9f92d46415aeb4fcfdf2e9715aed59d17d",
+    "size": "1781760"
   },
   {
     "name": "yq",
@@ -837,12 +837,12 @@
   },
   {
     "name": "zip",
-    "version": "3.0",
+    "version": "3.0_p16",
     "architecture": "x86_64",
     "description": "zip archive creator",
     "filename": "zip.spk",
-    "sha256": "11bcdfecdef0d834657120e88de530fc15a3b45857148a4d582124deaaeb5d7e",
-    "size": "3287040"
+    "sha256": "550e416710f66e2b1fe036097d790a04fb7cee93bce3b6a84661a168726edcb1",
+    "size": "624640"
   },
   {
     "name": "zsh",
@@ -855,11 +855,11 @@
   },
   {
     "name": "zstd",
-    "version": "1.5.7",
+    "version": "1.5.7-r1",
     "architecture": "x86_64",
     "description": "Zstandard compression (zstd)",
     "filename": "zstd.spk",
-    "sha256": "ae2188c231c3c94a4ec466c86f743c106d05a019de977026ba2f12b105ba2246",
-    "size": "4116480"
+    "sha256": "3226094cdb7dbfc4f92c2662b61d7e5c40ef09ccf46391038ad9b567ed829b78",
+    "size": "1556480"
   }
 ]
