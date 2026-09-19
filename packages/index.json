@@ -84,12 +84,12 @@
   },
   {
     "name": "bind",
-    "version": "9.20.27",
+    "version": "9.20.29",
     "architecture": "x86_64",
     "description": "BIND DNS utilities (dig/host/nslookup)",
     "filename": "bind.spk",
-    "sha256": "04826408465d27ccbb86b75eaa0916d74f17609ab033b209ab620c0da38bde4f",
-    "size": "62842880"
+    "sha256": "fff3c43d2491855c4e962a544ad80861cbae62865651d55271c190d1804933df",
+    "size": "6051840"
   },
   {
     "name": "bison",
@@ -211,13 +211,13 @@
   },
   {
     "name": "emacs",
-    "version": "31.1",
+    "version": "30.2-r7",
     "architecture": "x86_64",
     "description": "GNU Emacs extensible text editor",
     "filename": "emacs.spk",
-    "sha256": "6aae816b8af9acd70945deb3e63ba52c4208b7a1e87d06f311223606f3360f35",
-    "size": "416010240",
-    "parts": "5"
+    "sha256": "c5ec3576747b2c9869d52f958eef450e659a324a7b0558ac84e70866bc701109",
+    "size": "216586240",
+    "parts": "3"
   },
   {
     "name": "fastfetch",
@@ -228,12 +228,12 @@
   },
   {
     "name": "ffmpeg",
-    "version": "6.1.6",
+    "version": "8.1.2",
     "architecture": "x86_64",
     "description": "FFmpeg multimedia framework (libav*)",
     "filename": "ffmpeg.spk",
-    "sha256": "6c60906f29b38440a6a2399decf1e70d4dac06d0477f045bc6663a1781325008",
-    "size": "386877440"
+    "sha256": "bdc56685db8262c94735cce90fc773a13d61b94d0106cf8ad6e559d8883e857b",
+    "size": "72273920"
   },
   {
     "name": "file",
@@ -273,12 +273,12 @@
   },
   {
     "name": "flatpak",
-    "version": "1.18.2",
+    "version": "1.18.1",
     "architecture": "x86_64",
     "description": "Flatpak application sandboxing and distribution framework",
     "filename": "flatpak.spk",
-    "sha256": "a714133c414476bc513d9f1c6b620d5797ac7b3f6b204c81ec6f591c5241fb14",
-    "size": "74895360"
+    "sha256": "b9e5feda2f6f7d75267ba209f6937c86db2da14809620d01c654f4b9118e11d6",
+    "size": "19169280"
   },
   {
     "name": "flex",
