@@ -5,5 +5,6 @@
   "description": "standalone logind for OpenRC (login/session/seat manager)",
   "filename": "elogind.spk",
   "sha256": "f5ebe15b6527eccefb3c50eb50044ff4ac0b50265fee956ec405642f3e579b09",
-  "size": "5017600"
+  "size": "5017600",
+  "system": true
 }

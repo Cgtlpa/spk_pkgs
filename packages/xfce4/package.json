@@ -5,5 +5,6 @@
   "description": "Xfce desktop environment (full)",
   "filename": "xfce4.spk",
   "sha256": "2927cf00d7b066025b9a3ef7647f8225ac1860e305a4d3851f9ee468118ef68e",
-  "size": "799784960"
+  "size": "799784960",
+  "system": true
 }

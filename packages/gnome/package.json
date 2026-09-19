@@ -5,5 +5,6 @@
   "description": "GNOME desktop environment (full)",
   "filename": "gnome.spk",
   "sha256": "6eb60a2fb5d53ccd15f62b1cb3ec2543e7451e1a577ecc02e0142324da5bbff2",
-  "size": "1985986560"
+  "size": "1985986560",
+  "system": true
 }

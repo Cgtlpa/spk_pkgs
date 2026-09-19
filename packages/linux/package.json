@@ -6,5 +6,6 @@
   "filename": "linux.spk",
   "sha256": "ae2d878f857dc4e41d446d3bafc985cf3b5f6ac18a21fac2ff55a9c4c25d1bde",
   "size": "2406639880",
-  "parts": "25"
+  "parts": "25",
+  "system": true
 }
