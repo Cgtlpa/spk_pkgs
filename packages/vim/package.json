@@ -1,9 +1,9 @@
 {
   "name": "vim",
-  "version": "9.2.1046",
+  "version": "9.1.1652-r2",
   "architecture": "x86_64",
   "description": "Vi IMproved text editor",
   "filename": "vim.spk",
-  "sha256": "1adeadec33d63df7a0207f6e8f5bede4d135b4179ebc8c8c9dce505877dc1124",
-  "size": "52060160"
+  "sha256": "17185043f8705a8928958cb81c6aed6783abc83ef035e8e290eda02eb20300a4",
+  "size": "47636480"
 }
