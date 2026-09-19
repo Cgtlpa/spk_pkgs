@@ -4,7 +4,8 @@
   "architecture": "x86_64",
   "description": "Xfce desktop environment (full)",
   "filename": "xfce4.spk",
-  "sha256": "2927cf00d7b066025b9a3ef7647f8225ac1860e305a4d3851f9ee468118ef68e",
-  "size": "799784960",
-  "system": true
+  "sha256": "768ade3b7dec3ea98f1573d194652c718acf8602b023038ddc012f469902b3ca",
+  "size": "251269120",
+  "system": true,
+  "parts": "3"
 }
