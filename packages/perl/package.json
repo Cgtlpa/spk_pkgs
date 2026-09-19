@@ -1,9 +1,9 @@
 {
   "name": "perl",
-  "version": "5.42.2",
+  "version": "5.44.0",
   "architecture": "x86_64",
   "description": "Perl 5 interpreter",
   "filename": "perl.spk",
-  "sha256": "c7eaa183ab415c4b152f420d166cd56e20fb6a68c85781f65ec54f9f27ba91af",
-  "size": "48537600"
+  "sha256": "5480ffd5da7510442d425a64bc57ab7b432e594f7b4b3f97fad9ed1cc5a158fd",
+  "size": "56299520"
 }
