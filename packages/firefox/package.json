@@ -4,6 +4,7 @@
   "architecture": "x86_64",
   "description": "Mozilla Firefox web browser",
   "filename": "firefox.spk",
-  "sha256": "f4dba855c4f6a71addf80c21bb91990bdc77ac772fe6e613bf988a353cee9c44",
-  "size": "580874240"
+  "sha256": "5e794dd31aea23bb2743cff6e098ae99c8487a046bef05f18a85c735792af6bd",
+  "size": "361338880",
+  "parts": "4"
 }

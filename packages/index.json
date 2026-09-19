@@ -260,8 +260,9 @@
     "architecture": "x86_64",
     "description": "Mozilla Firefox web browser",
     "filename": "firefox.spk",
-    "sha256": "f4dba855c4f6a71addf80c21bb91990bdc77ac772fe6e613bf988a353cee9c44",
-    "size": "580874240"
+    "sha256": "5e794dd31aea23bb2743cff6e098ae99c8487a046bef05f18a85c735792af6bd",
+    "size": "361338880",
+    "parts": "4"
   },
   {
     "name": "fish",
@@ -347,13 +348,12 @@
   },
   {
     "name": "ghostty",
-    "version": "1.3.1",
+    "version": "1.1.3",
     "architecture": "x86_64",
     "description": "ghostty - the fast, native GPU-based terminal emulator",
     "filename": "ghostty.spk",
-    "sha256": "cf8da21b1b7e06ee5cb5d50089186bd680dff814a0e10c720bbd609921ce3b18",
-    "size": "151828480",
-    "parts": "2"
+    "sha256": "42cced7d591e9ab89d7e632de00d0d11ac2540c6056090d2301a34b9baf1c93b",
+    "size": "77301760"
   },
   {
     "name": "git",
@@ -481,8 +481,8 @@
     "architecture": "x86_64",
     "description": "kitty - the fast, feature-rich GPU-based terminal emulator",
     "filename": "kitty.spk",
-    "sha256": "36d1a8456392b1875169388b395f0389965f8d1eca92137d713988ada3a1b37f",
-    "size": "54876160"
+    "sha256": "2a18165ac9acc27aa280b3e5d71e6be2997df17977fb9d459fcf10f2952c467f",
+    "size": "79626240"
   },
   {
     "name": "kmod",
@@ -979,8 +979,9 @@
     "architecture": "x86_64",
     "description": "Wine Windows application compatibility layer",
     "filename": "wine.spk",
-    "sha256": "d5354d7707a17adf067f82e64a6e78abc5a98b349fd23e9666b9cfeb9641865e",
-    "size": "2164469760"
+    "sha256": "97adb9ea86d35f14ca4d86936afe79bea8504fe1a3a868d0a662f9160b1d9190",
+    "size": "601579520",
+    "parts": "7"
   },
   {
     "name": "xfce4",
