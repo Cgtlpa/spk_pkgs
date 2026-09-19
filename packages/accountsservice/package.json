@@ -1,0 +1,10 @@
+{
+  "name": "accountsservice",
+  "version": "26.27.3",
+  "architecture": "x86_64",
+  "description": "D-Bus interface for user account management (GNOME/KDE integration)",
+  "filename": "accountsservice.spk",
+  "sha256": "4a9120797c6b3533cca9f4767e1807f55af945d2a2d8d05c98249263f7102357",
+  "size": "911360",
+  "system": true
+}

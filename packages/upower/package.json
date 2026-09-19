@@ -1,0 +1,10 @@
+{
+  "name": "upower",
+  "version": "1.90.9",
+  "architecture": "x86_64",
+  "description": "power management daemon (batteries, suspend - dbus-activated)",
+  "filename": "upower.spk",
+  "sha256": "a61ebd79282f02bddeb46d2b321a3575a92da955bbd798e72005b0d7f965f9d1",
+  "size": "860160",
+  "system": true
+}

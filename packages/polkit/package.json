@@ -1,0 +1,10 @@
+{
+  "name": "polkit",
+  "version": "126",
+  "architecture": "x86_64",
+  "description": "PolicyKit authorization framework (dbus-activated)",
+  "filename": "polkit.spk",
+  "sha256": "d2cfaa1773bd5510e2aebd70e354fa107358ad87ae2868fa51e473cc55de82ae",
+  "size": "1157120",
+  "system": true
+}

@@ -9,6 +9,16 @@
     "size": "276480"
   },
   {
+    "name": "accountsservice",
+    "version": "26.27.3",
+    "architecture": "x86_64",
+    "description": "D-Bus interface for user account management (GNOME/KDE integration)",
+    "filename": "accountsservice.spk",
+    "sha256": "4a9120797c6b3533cca9f4767e1807f55af945d2a2d8d05c98249263f7102357",
+    "size": "911360",
+    "system": true
+  },
+  {
     "name": "alacritty",
     "version": "0.17.0",
     "architecture": "x86_64",
@@ -593,6 +603,16 @@
     "size": "2662400"
   },
   {
+    "name": "polkit",
+    "version": "126",
+    "architecture": "x86_64",
+    "description": "PolicyKit authorization framework (dbus-activated)",
+    "filename": "polkit.spk",
+    "sha256": "d2cfaa1773bd5510e2aebd70e354fa107358ad87ae2868fa51e473cc55de82ae",
+    "size": "1157120",
+    "system": true
+  },
+  {
     "name": "qemu",
     "version": "11.1.1",
     "architecture": "x86_64",
@@ -622,12 +642,12 @@
   },
   {
     "name": "sddm",
-    "version": "0.21.0",
+    "version": "0.21.0_p20251101",
     "architecture": "x86_64",
-    "description": "SDDM - Simple Desktop Display Manager (greeter + helper)",
+    "description": "SDDM display manager with Qt closure and xdm integration (Gentoo build)",
     "filename": "sddm.spk",
-    "sha256": "7ccd80686508f3965e314cfa5eca22093bb346534959498b9d827f35773e7c06",
-    "size": "142120960",
+    "sha256": "12ffd1011e72772c968a5463e968ed40622cef9de593c74e1fe525718e0eb853",
+    "size": "153466880",
     "parts": "2",
     "system": true
   },
@@ -712,6 +732,16 @@
     "filename": "unzip.spk",
     "sha256": "c1a0d3e0b51c8b92603f8633c0e9a0495f1bdde5cf255bf4cfdf0fc93f77a288",
     "size": "2938880"
+  },
+  {
+    "name": "upower",
+    "version": "1.90.9",
+    "architecture": "x86_64",
+    "description": "power management daemon (batteries, suspend - dbus-activated)",
+    "filename": "upower.spk",
+    "sha256": "a61ebd79282f02bddeb46d2b321a3575a92da955bbd798e72005b0d7f965f9d1",
+    "size": "860160",
+    "system": true
   },
   {
     "name": "vim",

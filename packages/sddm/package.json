@@ -1,11 +1,11 @@
 {
   "name": "sddm",
-  "version": "0.21.0",
+  "version": "0.21.0_p20251101",
   "architecture": "x86_64",
-  "description": "SDDM - Simple Desktop Display Manager (greeter + helper)",
+  "description": "SDDM display manager with Qt closure and xdm integration (Gentoo build)",
   "filename": "sddm.spk",
-  "sha256": "7ccd80686508f3965e314cfa5eca22093bb346534959498b9d827f35773e7c06",
-  "size": "142120960",
+  "sha256": "12ffd1011e72772c968a5463e968ed40622cef9de593c74e1fe525718e0eb853",
+  "size": "153466880",
   "parts": "2",
   "system": true
 }
