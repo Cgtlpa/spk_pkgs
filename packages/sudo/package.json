@@ -1,9 +1,9 @@
 {
   "name": "sudo",
-  "version": "1.9.17.p2",
+  "version": "1.9.17_p2",
   "architecture": "x86_64",
   "description": "sudo elevation utility",
   "filename": "sudo.spk",
-  "sha256": "2943d8b0aff02baf35748002fad2718c192abf10baa2294fd98135f30ec31f22",
-  "size": "12113920"
+  "sha256": "21c30c9df163c06f99a48c3d51185385f03b7e58cf7742f378ef4e140c46218d",
+  "size": "6451200"
 }
