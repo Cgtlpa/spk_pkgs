@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "info page reader (info/install-info)",
   "filename": "texinfo.spk",
-  "sha256": "7213896b0132817be26923d50b4ecf2f2c8bcc8a284ccce383b64016cd4a8018",
-  "size": "23183360"
+  "sha256": "f26208a8c433cf62ba3ad538adf6de60bc1a9952f2610ef9272bef3275b6b8c2",
+  "size": "11489280"
 }
