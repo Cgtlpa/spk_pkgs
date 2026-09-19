@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "interactive process viewer",
   "filename": "htop.spk",
-  "sha256": "99336147312d3f90cffb4e73f8f008255421fc3dd2df8d4ada5240569f8603e5",
-  "size": "4669440"
+  "sha256": "e742a5095e845bbbd1e253d1869d9b1d586d3248ed2536aa359f40980058b470",
+  "size": "419840"
 }
