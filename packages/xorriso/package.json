@@ -1,9 +1,9 @@
 {
   "name": "xorriso",
-  "version": "1.5.8.2",
+  "version": "1.5.8_p2",
   "architecture": "x86_64",
   "description": "xorriso ISO image management tool (libisoburn)",
   "filename": "xorriso.spk",
-  "sha256": "4e99d57d8d529c44716bd14c719de181b562240b4f85575532d2fe27de9272dd",
-  "size": "5468160"
+  "sha256": "cd45b3f45ab0ab9577a4feda937c0355b827fdf4e92fa49eb5c66a747383b836",
+  "size": "2908160"
 }
