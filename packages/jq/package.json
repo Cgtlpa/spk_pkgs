@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "lightweight JSON processor",
   "filename": "jq.spk",
-  "sha256": "9b4298ab13c721ec08705a730ccb032149e72adbaef609e6650dc5ef4b8ba24a",
-  "size": "4761600"
+  "sha256": "05fdd3b2074de7def268b27d1dfb49b1d2cd145c8ae6499b0eb1f0d95f399cc7",
+  "size": "1126400"
 }
