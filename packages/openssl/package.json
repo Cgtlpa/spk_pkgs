@@ -1,9 +1,9 @@
 {
   "name": "openssl",
-  "version": "3.6.4",
+  "version": "3.5.8",
   "architecture": "x86_64",
   "description": "OpenSSL cryptography CLI",
   "filename": "openssl.spk",
-  "sha256": "b1ce46e510bb76dde4199912bc81e2f3a646a5349b3ee4e4afc2e32dfabcb907",
-  "size": "13905920"
+  "sha256": "7d8e9864da48fc9d1d3806f0bcb316344263a262707734d9c2248eef6e3ad036",
+  "size": "24852480"
 }
