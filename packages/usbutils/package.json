@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "USB utilities (lsusb)",
   "filename": "usbutils.spk",
-  "sha256": "338f1dbb31960746c88ff16f3bbc4c7018695801210c92b7d69e7f3c60bdc77a",
-  "size": "4075520"
+  "sha256": "87420befe67438fb2e78135368b965a723a64eb018deef05e8e1ad143521eaaf",
+  "size": "389120"
 }
