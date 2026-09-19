@@ -1,9 +1,9 @@
 {
   "name": "wget",
-  "version": "1.25.0",
+  "version": "1.25.0-r2",
   "architecture": "x86_64",
   "description": "GNU wget downloader",
   "filename": "wget.spk",
-  "sha256": "96fa4ca1cae4d034692f4378d4ee11719d5f9b72201f6561997d1c73d60cbd76",
-  "size": "14172160"
+  "sha256": "e0931976948848aa87c1f0f5e07757f071d2769456bbf00caa4a95beb66db7f1",
+  "size": "3522560"
 }
