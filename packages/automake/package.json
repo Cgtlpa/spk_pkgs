@@ -1,9 +1,9 @@
 {
   "name": "automake",
-  "version": "1.18.1",
+  "version": "1.18.1-r1",
   "architecture": "x86_64",
   "description": "GNU automake build tooling",
   "filename": "automake.spk",
-  "sha256": "fdf4faa0592463b1026554f5a6e9557947c7172127c2e0977887aadab0e58671",
-  "size": "2600960"
+  "sha256": "397ba2b8c30e12526bfe9b6a5251408ebc0e6d4d23d92d5ec1c9a91384b03e56",
+  "size": "1955840"
 }
