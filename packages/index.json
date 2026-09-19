@@ -790,8 +790,8 @@
     "architecture": "x86_64",
     "description": "SDDM display manager with Qt closure and xdm integration (Gentoo build)",
     "filename": "sddm.spk",
-    "sha256": "12ffd1011e72772c968a5463e968ed40622cef9de593c74e1fe525718e0eb853",
-    "size": "153466880",
+    "sha256": "63f8bb27ee38a88b4fdef25357c0d0d43dfefe8e851c8c23c280811af548ee02",
+    "size": "157501440",
     "parts": "2",
     "system": true
   },
