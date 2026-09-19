@@ -1,9 +1,9 @@
 {
   "name": "kvm",
-  "version": "7.2.0",
+  "version": "10.2.3",
   "architecture": "x86_64",
   "description": "Kernel-based Virtual Machine frontend (invokes qemu-system-x86_64)",
   "filename": "kvm.spk",
-  "sha256": "16752de6e736c29dada0aa33a626d221a8bf045c46bf9231288cc26508b0b244",
-  "size": "74178560"
+  "sha256": "cec393c8eeb68e9620399ac7e9bdc216ffbbda77c871674f8bbb50631a595b41",
+  "size": "57958400"
 }
