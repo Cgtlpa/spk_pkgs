@@ -427,7 +427,8 @@
     "filename": "hyprland.spk",
     "sha256": "d0cf85ffb2e3483a849f3f262c852a52990c07c4750cf90fd0ed901de6ef8a96",
     "size": "286566400",
-    "system": true
+    "system": true,
+    "parts": "4"
   },
   {
     "name": "iproute2",
