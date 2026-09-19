@@ -4,7 +4,6 @@
   "architecture": "x86_64",
   "description": "GNU debugger",
   "filename": "gdb.spk",
-  "sha256": "dbcc3be461cee2ec7f4dea4badc6a5986acef535fd3137e7bea6be6ed655f8f3",
-  "size": "106219520",
-  "parts": "2"
+  "sha256": "0193b9a5f2bb620695cf6369adc5593f040f688f58624f1e9cd31444670dc683",
+  "size": "14182400"
 }
