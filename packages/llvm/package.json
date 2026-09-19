@@ -1,9 +1,10 @@
 {
   "name": "llvm",
-  "version": "21",
+  "version": "22.1.8",
   "architecture": "x86_64",
   "description": "LLVM compiler infrastructure",
   "filename": "llvm.spk",
-  "sha256": "499825e203e6b4681ba9a1766d71582daf6301126293ca39ba6fc7f9c307487e",
-  "size": "855214080"
+  "sha256": "71dca5838e3589b31d6c6dc150d349b868d535e5f4cf8bf7065fcf3ad9e813ec",
+  "size": "416215040",
+  "parts": "5"
 }
