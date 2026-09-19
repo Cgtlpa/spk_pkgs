@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "GNU find/xargs utilities",
   "filename": "findutils.spk",
-  "sha256": "7e261b45dbb90f4424d91d5738e25c1f6cfecd03ccffef8578398932ade88d6c",
-  "size": "4106240"
+  "sha256": "daddd7fa4870509612176581243dd735012b163c486cffa9607de23e4cf3f398",
+  "size": "2273280"
 }
