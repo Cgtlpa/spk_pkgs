@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "iputils ping/tracepath utilities",
   "filename": "iputils.spk",
-  "sha256": "55a2cbbf3250c4d529fabb825e2695b92fd5dd835dc6fee1dedfbb2286a14f4a",
+  "sha256": "50c85e0fcc800fdd86aa1f365217b4c94d70e6fe4ad319eff4d53cfb38da23ce",
   "size": "491520"
 }
