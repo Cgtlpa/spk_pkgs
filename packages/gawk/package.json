@@ -1,9 +1,9 @@
 {
   "name": "gawk",
-  "version": "5.4.1",
+  "version": "5.3.2",
   "architecture": "x86_64",
   "description": "GNU awk implementation",
   "filename": "gawk.spk",
-  "sha256": "7223338d40af57ac91188e28f71153927908e496856d082b433ff14eefd4a879",
-  "size": "7372800"
+  "sha256": "3d16bd2f4d45f2ccbc3b98288e1ca818dbaff037d8fb2cc16978b25b40a1b020",
+  "size": "3962880"
 }
