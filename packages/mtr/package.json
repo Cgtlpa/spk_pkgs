@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "network diagnostic tool (mtr)",
   "filename": "mtr.spk",
-  "sha256": "d651baef1e5051148833843390d234fbde8213369dc12e453a2e97ecf983d872",
+  "sha256": "e36a009d8b6fad0bead0498d343ecc9de7047dffddf6cadea0d6d187e820a037",
   "size": "184320"
 }
