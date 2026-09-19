@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "GNU macro processor (m4)",
   "filename": "m4.spk",
-  "sha256": "b0d2b561e0e2fe92428b922266e645438751b3bf3f4c109ff51af4002a100794",
-  "size": "2672640"
+  "sha256": "1fbcd9268e632344e68b17d1787e5d7bed9affb04425c463a8cf469890e186c0",
+  "size": "839680"
 }
