@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "PCI utilities (lspci)",
   "filename": "pciutils.spk",
-  "sha256": "d372e4434ff9c4a3ad97199bb8a2c4ef49131e57eaf98f91ef2ee6e9cba7683e",
-  "size": "14469120"
+  "sha256": "656dcc8362cd96b1b9cdc5c592b29da95e27fdf27ca10c8b23c4c85349455d06",
+  "size": "501760"
 }
