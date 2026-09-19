@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "pkg-config compatible tool",
   "filename": "pkgconf.spk",
-  "sha256": "61d57e1411a5bb231c1ad08728c27e1d3a1cd134329fa34efbb267ce18c6aa98",
-  "size": "2662400"
+  "sha256": "91fba81fea43bea7288c7cbef4af5fb868b05287b900a71e309ea22f9aa1f0fc",
+  "size": "430080"
 }
