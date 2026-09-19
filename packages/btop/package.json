@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "resource monitor (btop)",
   "filename": "btop.spk",
-  "sha256": "b1ad2c81bcf212152bc82ec4fb2e77395b453cbc5264b2926ea4ad44ea35da40",
-  "size": "8642560"
+  "sha256": "bd986b17ed9aa11dd7c1b5af0062db6a565018e875eb996586a4f9a2ef37c822",
+  "size": "1945600"
 }
