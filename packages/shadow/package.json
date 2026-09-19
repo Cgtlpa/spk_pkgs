@@ -1,9 +1,9 @@
 {
   "name": "shadow",
-  "version": "4.20.0.arch1",
+  "version": "4.20.0",
   "architecture": "x86_64",
   "description": "user/group account utilities (passwd/useradd)",
   "filename": "shadow.spk",
-  "sha256": "69edde1fb52796fd442f7e3dbd4a7cad0318736f4ce87b3a6544350601d64625",
-  "size": "4116480"
+  "sha256": "7bd51526ea123f4f09ea136aa25fd1fe14842bc2e1e0f6c26a753212064946d7",
+  "size": "5324800"
 }
