@@ -1,9 +1,9 @@
 {
   "name": "ninja",
-  "version": "1.13.2",
+  "version": "1.13.2-r1",
   "architecture": "x86_64",
   "description": "ninja build system",
   "filename": "ninja.spk",
-  "sha256": "0840282a7b6be148b3187c7481048111667a3426b705d36243cf54538453808f",
-  "size": "7239680"
+  "sha256": "b506d9b0cf52627b18cd01c5d6dff181e51a8d31a7a549155929446dcc746f00",
+  "size": "399360"
 }
