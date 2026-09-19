@@ -394,11 +394,12 @@
   },
   {
     "name": "grub",
-    "version": "2.02",
+    "version": "2.14",
     "architecture": "x86_64",
     "description": "GRand Unified Bootloader",
     "filename": "grub.spk",
-    "sha256": "74c8cdc8ff54f04f8960176ac2fc5f177a939326ad44a69aa96435f29939aabf"
+    "sha256": "d77ee497e161b5f8646548ee53decf91a1c0911424754908f7b0c78e9427442b",
+    "size": "72816640"
   },
   {
     "name": "gzip",
