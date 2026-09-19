@@ -129,12 +129,13 @@
   },
   {
     "name": "clang",
-    "version": "21",
+    "version": "22.1.8",
     "architecture": "x86_64",
     "description": "Clang C/C++ compiler frontend for LLVM",
     "filename": "clang.spk",
-    "sha256": "797a8a1073d2d39ded9e41866123758cb0f7235d17d49004b2203d8bcb5c4934",
-    "size": "598251520"
+    "sha256": "fc7d1cb094a949e2c920ccb16bbb3bca38bca5d626834a01c4f26b99c2a7080a",
+    "size": "364881920",
+    "parts": "4"
   },
   {
     "name": "coreutils",
@@ -318,13 +319,13 @@
   },
   {
     "name": "gcc",
-    "version": "16.2.1",
+    "version": "15.3.0",
     "architecture": "x86_64",
     "description": "GNU Compiler Collection (C/C++) with binutils, headers and runtime",
     "filename": "gcc.spk",
-    "sha256": "32d95eee0497a1bc06fb3e31f0d9b6795440537246ed17fe32623163eb3228ad",
-    "size": "281835520",
-    "parts": "3"
+    "sha256": "c00b16d9c9c88dde854b3d720fee3f7090383f518646df0ed64b0b72a26e41d2",
+    "size": "351057920",
+    "parts": "4"
   },
   {
     "name": "gdb",
@@ -447,12 +448,13 @@
   },
   {
     "name": "jdk",
-    "version": "21.0.8+9",
+    "version": "21.0.12_p8",
     "architecture": "x86_64",
     "description": "OpenJDK 21 Java Development Kit (LTS)",
     "filename": "jdk.spk",
-    "sha256": "0a4fbc39687e8a77e61f4654338307f8bb4e115a617eccee88b2680427a7a23d",
-    "size": "281016320"
+    "sha256": "a8fbd7f4581569de529a371db56395f2a03d659c2c3a3a40b8968d61fab7c79d",
+    "size": "304855040",
+    "parts": "4"
   },
   {
     "name": "jq",
@@ -522,12 +524,13 @@
   },
   {
     "name": "llvm",
-    "version": "21",
+    "version": "22.1.8",
     "architecture": "x86_64",
     "description": "LLVM compiler infrastructure",
     "filename": "llvm.spk",
-    "sha256": "499825e203e6b4681ba9a1766d71582daf6301126293ca39ba6fc7f9c307487e",
-    "size": "855214080"
+    "sha256": "71dca5838e3589b31d6c6dc150d349b868d535e5f4cf8bf7065fcf3ad9e813ec",
+    "size": "416215040",
+    "parts": "5"
   },
   {
     "name": "lm_sensors",
@@ -751,13 +754,13 @@
   },
   {
     "name": "qemu",
-    "version": "11.1.1",
+    "version": "10.2.3",
     "architecture": "x86_64",
     "description": "QEMU machine emulator and virtualizer (x86_64)",
     "filename": "qemu.spk",
-    "sha256": "60d1aa5143b4582bedcd3a952e7ff7c4def6fcc8f2d5d069acfc1ae9ddccdf05",
-    "size": "321259520",
-    "parts": "4"
+    "sha256": "dfb0062617c931af4b30aa689607cac86b4b2ceebc25011b1787a87ec420ae48",
+    "size": "399861760",
+    "parts": "5"
   },
   {
     "name": "rio",

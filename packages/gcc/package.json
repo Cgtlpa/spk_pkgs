@@ -1,10 +1,10 @@
 {
   "name": "gcc",
-  "version": "16.2.1",
+  "version": "15.3.0",
   "architecture": "x86_64",
   "description": "GNU Compiler Collection (C/C++) with binutils, headers and runtime",
   "filename": "gcc.spk",
-  "sha256": "32d95eee0497a1bc06fb3e31f0d9b6795440537246ed17fe32623163eb3228ad",
-  "size": "281835520",
-  "parts": "3"
+  "sha256": "c00b16d9c9c88dde854b3d720fee3f7090383f518646df0ed64b0b72a26e41d2",
+  "size": "351057920",
+  "parts": "4"
 }
