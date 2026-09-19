@@ -1,9 +1,9 @@
 {
   "name": "rsync",
-  "version": "3.5.0",
+  "version": "3.4.4",
   "architecture": "x86_64",
   "description": "fast incremental file transfer tool",
   "filename": "rsync.spk",
-  "sha256": "f4ad79f93e163608a258ea2612febe769d27725a5c8fa7a9f26d3e1d9068d534",
-  "size": "12595200"
+  "sha256": "313ef8882337fefe0fd560b82c94e5108fd630a79dc16f36c897cbd3d04afb1c",
+  "size": "768000"
 }
