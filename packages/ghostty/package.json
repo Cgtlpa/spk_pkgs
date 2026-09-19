@@ -5,5 +5,6 @@
   "description": "ghostty - the fast, native GPU-based terminal emulator",
   "filename": "ghostty.spk",
   "sha256": "cf8da21b1b7e06ee5cb5d50089186bd680dff814a0e10c720bbd609921ce3b18",
-  "size": "151828480"
+  "size": "151828480",
+  "parts": "2"
 }
