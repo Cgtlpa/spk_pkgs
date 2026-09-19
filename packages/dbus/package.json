@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "D-Bus message bus daemon and tools",
   "filename": "dbus.spk",
-  "sha256": "7a27ef98782bc847f558b6ca39835eab67d973f5cf24cbd0492556ea5e2dd064",
-  "size": "7014400"
+  "sha256": "62a8ed90574b5847d231cf62492363d59aa31918fd5849adec0a95c178d3a464",
+  "size": "3287040"
 }
