@@ -1,9 +1,9 @@
 {
   "name": "coreutils",
-  "version": "9.11",
+  "version": "9.11-r1",
   "architecture": "x86_64",
   "description": "GNU core utilities (file/shell/text tools)",
   "filename": "coreutils.spk",
-  "sha256": "5581fa29870d11ec06d85312c17225c7527ca9c42f6fc607e1a2e1f788fb885d",
-  "size": "19834880"
+  "sha256": "e039a7b57f1688b2bbee9cfa46aa255c9193addd948b0ee7b2acf8bf6929b3df",
+  "size": "19159040"
 }
