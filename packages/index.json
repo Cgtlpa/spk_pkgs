@@ -717,12 +717,12 @@
   },
   {
     "name": "tree",
-    "version": "2.3.2",
+    "version": "2.2.1",
     "architecture": "x86_64",
     "description": "directory tree listing",
     "filename": "tree.spk",
-    "sha256": "af6d8e3873acdbf3cf145e6e2489bf412f1c2980248d496053dfa2098aae56d1",
-    "size": "2580480"
+    "sha256": "41a020f9c7edfce372b2e40925ad2ffb137809d0f56e6e2858831c265a723146",
+    "size": "122880"
   },
   {
     "name": "unzip",
