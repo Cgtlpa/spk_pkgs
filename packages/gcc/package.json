@@ -5,5 +5,6 @@
   "description": "GNU Compiler Collection (C/C++) with binutils, headers and runtime",
   "filename": "gcc.spk",
   "sha256": "32d95eee0497a1bc06fb3e31f0d9b6795440537246ed17fe32623163eb3228ad",
-  "size": "281835520"
+  "size": "281835520",
+  "parts": "3"
 }
