@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "aria2 download utility (aria2c)",
   "filename": "aria2.spk",
-  "sha256": "84ba8b88660161744e5ee668edff0edf79930b5264d816b2794b2f39a7362014",
-  "size": "67461120"
+  "sha256": "ee2e15db810366304872abe5aaa70258eeaf3431da908d46d6284de2ec005968",
+  "size": "4485120"
 }
