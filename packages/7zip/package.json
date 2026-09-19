@@ -1,9 +1,9 @@
 {
   "name": "7zip",
-  "version": "26.03",
+  "version": "26.02-r1",
   "architecture": "x86_64",
   "description": "7-Zip archive utility",
   "filename": "7zip.spk",
-  "sha256": "e4072bcd4a5890561f09c081eca2fba72c96307e77a17ee24056ef93eab96afa",
-  "size": "276480"
+  "sha256": "e7e74daf16da19e6b636856a6e95499fb4a43987d92d0826bc7a2c76b6b993f7",
+  "size": "5806080"
 }
