@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "network exploration and security tool",
   "filename": "nmap.spk",
-  "sha256": "dd58219b1e5a6e2d110774e414a7ceec06039e63b569b6c2d315adda1af8b3a1",
-  "size": "46407680"
+  "sha256": "2433056e653714c09aaa49c000af7abd835a5a404d45cbca35ecb271d7082dd4",
+  "size": "28272640"
 }
