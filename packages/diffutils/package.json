@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "diff/patch utilities (diff3 cmp sdiff)",
   "filename": "diffutils.spk",
-  "sha256": "aa4d1f306d2a23fa8103ef65a0121d02ec67a5653291e1d250fbc71d5acfb94f",
-  "size": "2775040"
+  "sha256": "db1855cede537255816d3ba7e2bf6203fc8e953257086b0d3d75b656e9d373c3",
+  "size": "1740800"
 }
