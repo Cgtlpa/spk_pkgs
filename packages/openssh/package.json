@@ -1,9 +1,9 @@
 {
   "name": "openssh",
-  "version": "10.5p1",
+  "version": "10.4_p1-r1",
   "architecture": "x86_64",
   "description": "OpenSSH secure shell client/server",
   "filename": "openssh.spk",
-  "sha256": "a41160daf6759fbaddcec1955bdd1a455d5e0b46e2280becb2014998332f37d5",
-  "size": "19875840"
+  "sha256": "03ec1fab251728ccf550a0b245b61344fd99cbc01dd76d31a42aa7e8d6219cd8",
+  "size": "8253440"
 }
