@@ -4,6 +4,6 @@
   "architecture": "x86_64",
   "description": "GNU compression utilities (gzip)",
   "filename": "gzip.spk",
-  "sha256": "766d7c9b11cf09529c4d0a45ddaf9c35cf6e5fc9483996b7c6fcca2cd53c0965",
-  "size": "2631680"
+  "sha256": "c278c9873083444ca053ba16ef6171e4174ead0ec424730f4530a9aacc358b6d",
+  "size": "266240"
 }
