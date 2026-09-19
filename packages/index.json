@@ -43,8 +43,8 @@
     "architecture": "x86_64",
     "description": "aria2 download utility (aria2c)",
     "filename": "aria2.spk",
-    "sha256": "84ba8b88660161744e5ee668edff0edf79930b5264d816b2794b2f39a7362014",
-    "size": "67461120"
+    "sha256": "ee2e15db810366304872abe5aaa70258eeaf3431da908d46d6284de2ec005968",
+    "size": "4485120"
   },
   {
     "name": "autoconf",
@@ -66,11 +66,12 @@
   },
   {
     "name": "bash",
-    "version": "5.3.20",
+    "version": "5.3_p15",
     "architecture": "x86_64",
     "description": "GNU Bourne-Again SHell, statically linked",
     "filename": "bash.spk",
-    "sha256": "9f97cdf1ee2c4dab762422d7fd77b79c492cc492e9dfefcffa5d39db14714d58"
+    "sha256": "56cd05dfd9bbd236f1a3f3b2ad55ab53730c5723943c898e1c99cf767276d93b",
+    "size": "8458240"
   },
   {
     "name": "bc",
@@ -105,8 +106,8 @@
     "architecture": "x86_64",
     "description": "resource monitor (btop)",
     "filename": "btop.spk",
-    "sha256": "b1ad2c81bcf212152bc82ec4fb2e77395b453cbc5264b2926ea4ad44ea35da40",
-    "size": "8642560"
+    "sha256": "bd986b17ed9aa11dd7c1b5af0062db6a565018e875eb996586a4f9a2ef37c822",
+    "size": "1945600"
   },
   {
     "name": "bzip2",
@@ -137,12 +138,12 @@
   },
   {
     "name": "coreutils",
-    "version": "9.11",
+    "version": "9.11-r1",
     "architecture": "x86_64",
     "description": "GNU core utilities (file/shell/text tools)",
     "filename": "coreutils.spk",
-    "sha256": "5581fa29870d11ec06d85312c17225c7527ca9c42f6fc607e1a2e1f788fb885d",
-    "size": "19834880"
+    "sha256": "e039a7b57f1688b2bbee9cfa46aa255c9193addd948b0ee7b2acf8bf6929b3df",
+    "size": "19159040"
   },
   {
     "name": "cpio",
@@ -155,12 +156,12 @@
   },
   {
     "name": "curl",
-    "version": "8.22.0",
+    "version": "8.21.0-r1",
     "architecture": "x86_64",
     "description": "GNU cURL command line tool for transferring data using URL syntax",
     "filename": "curl.spk",
-    "sha256": "ed007a5884138af40d3cc789ec805c7a085740f5b522c6e2a09aabc40ff5359f",
-    "size": "19066880"
+    "sha256": "77a46f3f0555d71daf4c137aa1c2a055e44b6a5188e8a4d4646eae2125cc224c",
+    "size": "3563520"
   },
   {
     "name": "dash",
@@ -170,6 +171,15 @@
     "filename": "dash.spk",
     "sha256": "021f3614387bf214387f7ddd3d346ce3219cdd452828b683357358bb93467308",
     "size": "163840"
+  },
+  {
+    "name": "dbus",
+    "version": "1.16.2",
+    "architecture": "x86_64",
+    "description": "D-Bus message bus daemon and tools",
+    "filename": "dbus.spk",
+    "sha256": "62a8ed90574b5847d231cf62492363d59aa31918fd5849adec0a95c178d3a464",
+    "size": "3287040"
   },
   {
     "name": "diffutils",
@@ -186,8 +196,8 @@
     "architecture": "x86_64",
     "description": "disk usage reporter",
     "filename": "duf.spk",
-    "sha256": "99637a602913ba9626225b60d3a638b762599ea17e32c23a64ae70ff5bd31e7d",
-    "size": "5642240"
+    "sha256": "84549eb01c33ab0bf8eecac7e7e7513f3036bd90b6cb35aa4717da87e026af8f",
+    "size": "3799040"
   },
   {
     "name": "elogind",
@@ -254,12 +264,12 @@
   },
   {
     "name": "fish",
-    "version": "4.9.3",
+    "version": "4.6.0",
     "architecture": "x86_64",
     "description": "friendly interactive shell",
     "filename": "fish.spk",
-    "sha256": "75480e16b596dfa7275be7a6b36ca76419ddf82c2b71f9189a8486a0855db80d",
-    "size": "43694080"
+    "sha256": "65ab5824acbee6a379e52cdf739f606ec987fdc6cbaf325cbf1aeffd7a836928",
+    "size": "17121280"
   },
   {
     "name": "flatpak",
@@ -290,12 +300,12 @@
   },
   {
     "name": "fzf",
-    "version": "0.74.4",
+    "version": "0.74.1",
     "architecture": "x86_64",
     "description": "fuzzy finder for the command line",
     "filename": "fzf.spk",
-    "sha256": "66983d76afaf56a49d7ff4061bca3532452032b6a144d79eabf671bae276e21f",
-    "size": "8130560"
+    "sha256": "96927d7283a9d9d63ad487e27e5c33d84ba9b05f8a8c0d89ff9e8997fd812214",
+    "size": "5611520"
   },
   {
     "name": "gawk",
@@ -317,6 +327,15 @@
     "parts": "3"
   },
   {
+    "name": "gettext",
+    "version": "0.23.2",
+    "architecture": "x86_64",
+    "description": "GNU gettext i18n utilities",
+    "filename": "gettext.spk",
+    "sha256": "e823373895a0bcf62e6ce687b957622d6d945075ee4ee197d143062a86d10465",
+    "size": "11366400"
+  },
+  {
     "name": "ghostty",
     "version": "1.3.1",
     "architecture": "x86_64",
@@ -332,8 +351,8 @@
     "architecture": "x86_64",
     "description": "Git distributed version control system",
     "filename": "git.spk",
-    "sha256": "6a315b4bc722ac9d44db154d7e6fff499610ab379834a01855809c9a3615f050",
-    "size": "196515840"
+    "sha256": "a4abcd2d67d972431e9cd22a59199b786c0772bf11edeb3d3ba9bfe5628c4364",
+    "size": "51886080"
   },
   {
     "name": "gnome",
@@ -353,6 +372,15 @@
     "filename": "grep.spk",
     "sha256": "25b9bfa5fce6db14f088072947ab8d08d911dee1a70327e969ae569d52464fe4",
     "size": "1177600"
+  },
+  {
+    "name": "groff",
+    "version": "1.23.0-r2",
+    "architecture": "x86_64",
+    "description": "groff document formatting (man pages)",
+    "filename": "groff.spk",
+    "sha256": "9231ae985a2a705dd9726d18475dc26415a0cc88e0ee48b090d0795a6b09d02c",
+    "size": "22210560"
   },
   {
     "name": "grub",
@@ -392,12 +420,12 @@
   },
   {
     "name": "iproute2",
-    "version": "7.2.0",
+    "version": "7.0.0",
     "architecture": "x86_64",
     "description": "ip/ss/tc networking utilities",
     "filename": "iproute2.spk",
-    "sha256": "0f0f4c6c8c19373d82c9e14c648ade82422d3324349db188bf45c6b6eb8258d6",
-    "size": "9902080"
+    "sha256": "7c26b76e8354ee70d4aadc90cdf546299d026ce23c6971cd84ab9c649fb605ad",
+    "size": "4362240"
   },
   {
     "name": "iputils",
@@ -405,7 +433,7 @@
     "architecture": "x86_64",
     "description": "iputils ping/tracepath utilities",
     "filename": "iputils.spk",
-    "sha256": "55a2cbbf3250c4d529fabb825e2695b92fd5dd835dc6fee1dedfbb2286a14f4a",
+    "sha256": "50c85e0fcc800fdd86aa1f365217b4c94d70e6fe4ad319eff4d53cfb38da23ce",
     "size": "491520"
   },
   {
@@ -446,6 +474,15 @@
     "size": "54876160"
   },
   {
+    "name": "kmod",
+    "version": "34.2",
+    "architecture": "x86_64",
+    "description": "kernel module utilities (modprobe/lsmod)",
+    "filename": "kmod.spk",
+    "sha256": "42e067925ec11a8160d6f200931b80217810cf8a96b3eb0658072b23a67816ab",
+    "size": "409600"
+  },
+  {
     "name": "kvm",
     "version": "7.2.0",
     "architecture": "x86_64",
@@ -482,6 +519,15 @@
     "filename": "llvm.spk",
     "sha256": "499825e203e6b4681ba9a1766d71582daf6301126293ca39ba6fc7f9c307487e",
     "size": "855214080"
+  },
+  {
+    "name": "lm_sensors",
+    "version": "3.6.2",
+    "architecture": "x86_64",
+    "description": "hardware temperature/voltage sensors tool",
+    "filename": "lm_sensors.spk",
+    "sha256": "abd4028b3c6e7368a87146c6153691d6c6f0bb418c96519347d970a52d5bc856",
+    "size": "542720"
   },
   {
     "name": "lsof",
@@ -526,7 +572,7 @@
     "architecture": "x86_64",
     "description": "network diagnostic tool (mtr)",
     "filename": "mtr.spk",
-    "sha256": "d651baef1e5051148833843390d234fbde8213369dc12e453a2e97ecf983d872",
+    "sha256": "e36a009d8b6fad0bead0498d343ecc9de7047dffddf6cadea0d6d187e820a037",
     "size": "184320"
   },
   {
@@ -589,8 +635,8 @@
     "architecture": "x86_64",
     "description": "network exploration and security tool",
     "filename": "nmap.spk",
-    "sha256": "dd58219b1e5a6e2d110774e414a7ceec06039e63b569b6c2d315adda1af8b3a1",
-    "size": "46407680"
+    "sha256": "2433056e653714c09aaa49c000af7abd835a5a404d45cbca35ecb271d7082dd4",
+    "size": "28272640"
   },
   {
     "name": "nvidia",
@@ -623,12 +669,21 @@
   },
   {
     "name": "openssh",
-    "version": "10.5p1",
+    "version": "10.4_p1-r1",
     "architecture": "x86_64",
     "description": "OpenSSH secure shell client/server",
     "filename": "openssh.spk",
-    "sha256": "a41160daf6759fbaddcec1955bdd1a455d5e0b46e2280becb2014998332f37d5",
-    "size": "19875840"
+    "sha256": "03ec1fab251728ccf550a0b245b61344fd99cbc01dd76d31a42aa7e8d6219cd8",
+    "size": "8253440"
+  },
+  {
+    "name": "openssl",
+    "version": "3.5.8",
+    "architecture": "x86_64",
+    "description": "OpenSSL cryptography CLI",
+    "filename": "openssl.spk",
+    "sha256": "7d8e9864da48fc9d1d3806f0bcb316344263a262707734d9c2248eef6e3ad036",
+    "size": "24852480"
   },
   {
     "name": "patch",
@@ -638,6 +693,24 @@
     "filename": "patch.spk",
     "sha256": "4320ed38381b3533189fde86b0b8b2ddded649e821e4d3a63ced3484a13e6b48",
     "size": "225280"
+  },
+  {
+    "name": "pciutils",
+    "version": "3.15.0",
+    "architecture": "x86_64",
+    "description": "PCI utilities (lspci)",
+    "filename": "pciutils.spk",
+    "sha256": "656dcc8362cd96b1b9cdc5c592b29da95e27fdf27ca10c8b23c4c85349455d06",
+    "size": "501760"
+  },
+  {
+    "name": "perl",
+    "version": "5.44.0",
+    "architecture": "x86_64",
+    "description": "Perl 5 interpreter",
+    "filename": "perl.spk",
+    "sha256": "5480ffd5da7510442d425a64bc57ab7b432e594f7b4b3f97fad9ed1cc5a158fd",
+    "size": "56299520"
   },
   {
     "name": "pkgconf",
@@ -657,6 +730,15 @@
     "sha256": "d2cfaa1773bd5510e2aebd70e354fa107358ad87ae2868fa51e473cc55de82ae",
     "size": "1157120",
     "system": true
+  },
+  {
+    "name": "procps-ng",
+    "version": "4.0.6",
+    "architecture": "x86_64",
+    "description": "ps/top/free/uptime process and system tools",
+    "filename": "procps-ng.spk",
+    "sha256": "5fdc6db7bf5438806609b4303de53bff0e0619a42b54314ac1f533d5657e03b1",
+    "size": "2928640"
   },
   {
     "name": "qemu",
@@ -679,12 +761,12 @@
   },
   {
     "name": "rsync",
-    "version": "3.5.0",
+    "version": "3.4.4",
     "architecture": "x86_64",
     "description": "fast incremental file transfer tool",
     "filename": "rsync.spk",
-    "sha256": "f4ad79f93e163608a258ea2612febe769d27725a5c8fa7a9f26d3e1d9068d534",
-    "size": "12595200"
+    "sha256": "313ef8882337fefe0fd560b82c94e5108fd630a79dc16f36c897cbd3d04afb1c",
+    "size": "768000"
   },
   {
     "name": "sddm",
@@ -717,22 +799,49 @@
     "size": "983040"
   },
   {
+    "name": "shadow",
+    "version": "4.20.0",
+    "architecture": "x86_64",
+    "description": "user/group account utilities (passwd/useradd)",
+    "filename": "shadow.spk",
+    "sha256": "7bd51526ea123f4f09ea136aa25fd1fe14842bc2e1e0f6c26a753212064946d7",
+    "size": "5324800"
+  },
+  {
+    "name": "smartmontools",
+    "version": "7.5-r1",
+    "architecture": "x86_64",
+    "description": "SMART disk monitoring tools",
+    "filename": "smartmontools.spk",
+    "sha256": "7a463078b7de04202e3ecb400784ee02c47750f527fbcc398401ec1b17f035fd",
+    "size": "2088960"
+  },
+  {
     "name": "sqlite",
-    "version": "3.53.4",
+    "version": "3.53.3",
     "architecture": "x86_64",
     "description": "SQLite database shell (sqlite3)",
     "filename": "sqlite.spk",
-    "sha256": "317fdcca50a12b8f4f7e8d7048a96617ab2dd5bc4a4d5d16381384413aa53fbe",
-    "size": "6778880"
+    "sha256": "4a77e228684958bc8ef360acc6cd7501e7c457cc0518c61cdcb1af57882d6cd0",
+    "size": "4454400"
   },
   {
     "name": "strace",
-    "version": "7.2",
+    "version": "7.1",
     "architecture": "x86_64",
     "description": "system call tracer",
     "filename": "strace.spk",
-    "sha256": "cd910aa96ba6cf11163d0219971d71934bb3a3a5c53d96298b54b29f6e016c32",
-    "size": "5048320"
+    "sha256": "957949e3d02db3dac1f845bd0a8af409d06c6f202170b341b158c314067b4f5d",
+    "size": "3522560"
+  },
+  {
+    "name": "sudo",
+    "version": "1.9.17_p2",
+    "architecture": "x86_64",
+    "description": "sudo elevation utility",
+    "filename": "sudo.spk",
+    "sha256": "21c30c9df163c06f99a48c3d51185385f03b7e58cf7742f378ef4e140c46218d",
+    "size": "6451200"
   },
   {
     "name": "tar",
@@ -742,6 +851,15 @@
     "filename": "tar.spk",
     "sha256": "e58af2412dd93b122e462eee41bd9efa3134e751c5e482ed8edb4dbb0df776b7",
     "size": "3164160"
+  },
+  {
+    "name": "texinfo",
+    "version": "7.3",
+    "architecture": "x86_64",
+    "description": "info page reader (info/install-info)",
+    "filename": "texinfo.spk",
+    "sha256": "f26208a8c433cf62ba3ad538adf6de60bc1a9952f2610ef9272bef3275b6b8c2",
+    "size": "11489280"
   },
   {
     "name": "tldr",
@@ -799,13 +917,22 @@
     "system": true
   },
   {
+    "name": "usbutils",
+    "version": "019",
+    "architecture": "x86_64",
+    "description": "USB utilities (lsusb)",
+    "filename": "usbutils.spk",
+    "sha256": "87420befe67438fb2e78135368b965a723a64eb018deef05e8e1ad143521eaaf",
+    "size": "389120"
+  },
+  {
     "name": "vim",
-    "version": "9.2.1046",
+    "version": "9.1.1652-r2",
     "architecture": "x86_64",
     "description": "Vi IMproved text editor",
     "filename": "vim.spk",
-    "sha256": "1adeadec33d63df7a0207f6e8f5bede4d135b4179ebc8c8c9dce505877dc1124",
-    "size": "52060160"
+    "sha256": "17185043f8705a8928958cb81c6aed6783abc83ef035e8e290eda02eb20300a4",
+    "size": "47636480"
   },
   {
     "name": "wayland",
@@ -818,12 +945,12 @@
   },
   {
     "name": "wget",
-    "version": "1.25.0",
+    "version": "1.25.0-r2",
     "architecture": "x86_64",
     "description": "GNU wget downloader",
     "filename": "wget.spk",
-    "sha256": "96fa4ca1cae4d034692f4378d4ee11719d5f9b72201f6561997d1c73d60cbd76",
-    "size": "14172160"
+    "sha256": "e0931976948848aa87c1f0f5e07757f071d2769456bbf00caa4a95beb66db7f1",
+    "size": "3522560"
   },
   {
     "name": "which",
@@ -865,12 +992,12 @@
   },
   {
     "name": "xorriso",
-    "version": "1.5.8.2",
+    "version": "1.5.8_p2",
     "architecture": "x86_64",
     "description": "xorriso ISO image management tool (libisoburn)",
     "filename": "xorriso.spk",
-    "sha256": "4e99d57d8d529c44716bd14c719de181b562240b4f85575532d2fe27de9272dd",
-    "size": "5468160"
+    "sha256": "cd45b3f45ab0ab9577a4feda937c0355b827fdf4e92fa49eb5c66a747383b836",
+    "size": "2908160"
   },
   {
     "name": "xz",
@@ -883,12 +1010,12 @@
   },
   {
     "name": "yq",
-    "version": "4.53.3",
+    "version": "4.53.6",
     "architecture": "x86_64",
     "description": "portable YAML/XML processor (go-yq)",
     "filename": "yq.spk",
-    "sha256": "a3707b711cb8c0e2ecec7942d94907955165c843d52433f16c85e19e22b8c405",
-    "size": "16271360"
+    "sha256": "d18e1330e23fb2ee147885b86960f90cffd942dac62af1e9778401095a36f948",
+    "size": "14981120"
   },
   {
     "name": "zip",
@@ -901,12 +1028,12 @@
   },
   {
     "name": "zsh",
-    "version": "5.9.2",
+    "version": "5.9-r7",
     "architecture": "x86_64",
     "description": "Z shell (with functions/completions)",
     "filename": "zsh.spk",
-    "sha256": "75805c3cbc14125ba55000b386b34eb207732ecd46a462f34b683cf523939691",
-    "size": "11294720"
+    "sha256": "75bf1ef59bb3f910dea57ca7d68ece023c667bf71625b90540e72f1036db8714",
+    "size": "9871360"
   },
   {
     "name": "zstd",
