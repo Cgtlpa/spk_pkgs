@@ -1,9 +1,9 @@
 {
   "name": "autoconf",
-  "version": "2.73",
+  "version": "2.72-r7",
   "architecture": "x86_64",
   "description": "GNU autoconf build tooling",
   "filename": "autoconf.spk",
-  "sha256": "f71e1b58faab0f1cdf129741efdab2e80cbbfec7d183add930c1b921c023d8c8",
-  "size": "2344960"
+  "sha256": "d61eb3de9fe60aee9d0f783c86121a943e6a346dbf05cdc77d989d7bfd86ba81",
+  "size": "2457600"
 }
