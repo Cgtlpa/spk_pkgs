@@ -1,9 +1,9 @@
 {
   "name": "bzip2",
-  "version": "1.0.8",
+  "version": "1.0.8-r5",
   "architecture": "x86_64",
   "description": "bzip2 data compressor",
   "filename": "bzip2.spk",
-  "sha256": "9a8df66f8c50cba80556ccad04d8d1cf07096c200641a12303dbee9474963114",
-  "size": "2631680"
+  "sha256": "d8e2a1264100bf5cd72e93e1c7be5bd8edfffebb4d77f82b3625308f50915f0b",
+  "size": "512000"
 }
