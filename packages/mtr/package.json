@@ -1,9 +1,9 @@
 {
   "name": "mtr",
-  "version": "0.96",
+  "version": "0.96-r1",
   "architecture": "x86_64",
   "description": "network diagnostic tool (mtr)",
   "filename": "mtr.spk",
-  "sha256": "6ebca7e320e2cf55758e62dbc1947c224f2907afc0f8aa5b2bbd6a75eb1a261c",
-  "size": "4485120"
+  "sha256": "d651baef1e5051148833843390d234fbde8213369dc12e453a2e97ecf983d872",
+  "size": "184320"
 }
