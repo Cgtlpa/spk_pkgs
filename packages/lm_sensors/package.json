@@ -1,9 +1,9 @@
 {
   "name": "lm_sensors",
-  "version": "1:3.6.2",
+  "version": "3.6.2",
   "architecture": "x86_64",
   "description": "hardware temperature/voltage sensors tool",
   "filename": "lm_sensors.spk",
-  "sha256": "79c962c19cd62936749f0e3fdcee6778d91f84afcce9775e5e855106822ba6af",
-  "size": "3870720"
+  "sha256": "abd4028b3c6e7368a87146c6153691d6c6f0bb418c96519347d970a52d5bc856",
+  "size": "542720"
 }
