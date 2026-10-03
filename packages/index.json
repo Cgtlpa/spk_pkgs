@@ -1,0 +1,1 @@
+{"packages": [{"description": "Precompiled Silen kernel 6.18.54 with module tree", "filename": "linux-6.18.spk", "name": "linux-6.18", "system": true, "version": "6.18.54-silen"}]}
